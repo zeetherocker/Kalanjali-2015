@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Kalanjali 2015</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="openDrawer">Open navigation drawer</string>
+    <string name="closeDrawer">Close navigation drawer</string>
+    <string name="name">Zeeshan Ahmed</string>
+    <string name="email">zeetherocker@gmail.com</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_locate_us">Locate Us</string>
+    <string name="title_activity_event">Event Activity</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_main_event">Kalanjali-2015</string>
+    <string name="main_event_desc">\t\t Sir M.Visvesvaraya Institute of Technology, Bengaluru has been conducting Kalanjali an annual inter-collegiate Techno-Cultural Fest successfully since the year 1996.\n\t\tKalanjali has been setting the stage for the student community to show their talent, innovation and creativity with zeal and zest. Kalanjali 2015 is scheduled to be held on 30th and 31st October 2015.</string>
+
+
+
+</resources>
