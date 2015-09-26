@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 /**
  * Created by Zeeshan on 9/15/2015.
  */
-public class SecondFragment extends Fragment {
+public class ProfileDetails extends Fragment {
 
     View myView;
 

@@ -15,10 +15,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.ViewTreeObserver;
-import android.widget.AbsListView;
-import android.widget.ListView;
-import android.widget.ScrollView;
 
 
 public class MainActivity extends ActionBarActivity {
@@ -155,16 +151,16 @@ public class MainActivity extends ActionBarActivity {
 
         switch (position) {
             case 0:
-                myFragment = new SecondFragment();
+                myFragment = new ProfileDetails();
                 break;
             case 1:
                 myFragment = new HomeActivity();
                 break;
             case 2:
-                myFragment = new ThirdFragment();
+                myFragment = new EventTabsList();
                 break;
             case 4:
-                myFragment = new ForthFragment();
+                myFragment = new ContactDetails();
                 break;
 
         }
