@@ -16,6 +16,8 @@ import android.widget.TextView;
  */
 public class MainHome extends Fragment {
 
+    private int MAIN_ARG = 1111;
+
     View myView;
     TextView mtextview;
 
@@ -38,6 +40,7 @@ public class MainHome extends Fragment {
             Bundle b = new Bundle();
             b.putInt("title", R.string.title_main_event);
             b.putInt("desc", R.string.main_event_desc);
+            b.putInt("arg", MAIN_ARG);
             intent.putExtras(b);
             startActivity(intent);
         }

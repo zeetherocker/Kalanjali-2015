@@ -27,6 +27,7 @@ import com.github.ksoichiro.android.observablescrollview.ObservableScrollViewCal
 import com.github.ksoichiro.android.observablescrollview.ScrollState;
 import com.nineoldandroids.view.ViewHelper;
 import com.zap.Kalanjali.EventMasterFlow.EventContent;
+import com.zap.Kalanjali.EventMasterFlow.EventItem;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -38,6 +39,11 @@ import butterknife.InjectView;
  */
 public class EventActivity extends AppCompatActivity implements ObservableScrollViewCallbacks {
     public static final String TAG = "FlexibleSpaceHeaderFragment";
+
+    private static final int MAIN_ARG = 1111;
+    private static final int HOME_ARG = 2222;
+    private static final int FIRST_DAY_LIST = 1212;
+    private static final int SECOND_DAY_LIST = 2323;
 
     //@InjectView(R.id.observable_sv)
     ScrollFling mScrollView;
@@ -63,11 +69,12 @@ public class EventActivity extends AppCompatActivity implements ObservableScroll
     private boolean goingUp = false;
 
     private int mToolbarBackgroundColor;
-    private EventContent.EventItem CurrentItem = new EventContent.EventItem();
+    private EventItem CurrentItem = new EventItem();
 
     int ItemPos = 0;
     int string = 1;
     int string1 = 0;
+    int arg;
 
     public EventActivity() {
     }
@@ -90,21 +97,29 @@ public class EventActivity extends AppCompatActivity implements ObservableScroll
         mextraView = findViewById(R.id.extra_view);
 
         Bundle b = getIntent().getExtras();
+        arg = b.getInt("arg");
         ItemPos = b.getInt("key");
         string = b.getInt("title");
         string1 = b.getInt("desc");
 
-        if (string == R.string.title_main_event) {
+        switch (arg) {
+            case MAIN_ARG:
 
-            mTitle.setText(getString(string));
-            mEventDesc.setText(getString(string1));
-            mextraView.setMinimumHeight((int) getResources().getDimension(R.dimen.extra_view_height));
+                mTitle.setText(getString(string));
+                mEventDesc.setText(getString(string1));
+                mextraView.setMinimumHeight((int) getResources().getDimension(R.dimen.extra_view_height));
+                break;
+            case HOME_ARG :
 
-        } else {
+                CurrentItem = EventContent.ITEMS.get(ItemPos);
+                mTitle.setText(CurrentItem.title);
+                mEventDesc.setText(CurrentItem.event_desc);
+                break;
+            case FIRST_DAY_LIST :
 
-            CurrentItem = EventContent.ITEMS.get(ItemPos);
-            mTitle.setText(CurrentItem.title);
-            mEventDesc.setText(CurrentItem.event_desc);
+                break;
+            case SECOND_DAY_LIST :
+                break;
 
         }
         mScrollView = (ScrollFling) findViewById(R.id.observable_sv);

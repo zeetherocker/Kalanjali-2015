@@ -91,7 +91,7 @@ public class MainActivity extends ActionBarActivity {
                 if (child != null && mGestureDetector.onTouchEvent(motionEvent)) {
                     Drawer.closeDrawers();
                     position = recyclerView.getChildPosition(child);
-                    if(position== 3){
+                    if(position== 3 || position == 2){
                         startActivity(position);
                     } else {
                         openFragment(position);
@@ -156,9 +156,6 @@ public class MainActivity extends ActionBarActivity {
             case 1:
                 myFragment = new HomeActivity();
                 break;
-            case 2:
-                myFragment = new EventTabsList();
-                break;
             case 4:
                 myFragment = new ContactDetails();
                 break;
@@ -173,8 +170,10 @@ public class MainActivity extends ActionBarActivity {
     }
 
     private void startActivity(int position) {
+        if(position==2)
+            startActivity(new Intent(this, EventListActivity.class));
+        else
             startActivity(new Intent(this, Locate_us.class));
-
     }
 
 

@@ -13,6 +13,9 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.zap.Kalanjali.EventMasterFlow.EventContent;
+import com.zap.Kalanjali.EventMasterFlow.EventItem;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,10 +24,9 @@ import java.util.List;
  */
 public class ThirdHome extends Fragment {
 
-    private String[] listtitles = {"Event-1", "Event-2", "Event-3"};
-    private int[] listicons= {R.drawable.ic_card1, R.drawable.ic_card2, R.drawable.ic_card1};
+    private static final int HOME_ARG = 2222;
 
-    List<CardInfo> dataCurrent = getData();
+    List<EventItem> dataCurrent = getData();
 
     View myView;
     @Nullable
@@ -38,7 +40,7 @@ public class ThirdHome extends Fragment {
 
     public void populateList() {
 
-        ArrayAdapter<CardInfo> adapter = new MyAdapter();
+        ArrayAdapter<EventItem> adapter = new MyAdapter();
         ListView listView = (ListView) myView.findViewById(R.id.listView);
         listView.setAdapter(adapter);
 
@@ -51,7 +53,8 @@ public class ThirdHome extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(getActivity(), EventActivity.class);
                 Bundle b = new Bundle();
-                b.putInt("key", position+6);
+                b.putInt("key", position+3);
+                b.putInt("arg", HOME_ARG);
                 intent.putExtras(b);
                 startActivity(intent);
             }
@@ -60,18 +63,18 @@ public class ThirdHome extends Fragment {
         list.setFocusable(false);
     }
 
-    public List<CardInfo> getData() {
-        List<CardInfo> data = new ArrayList<>();
-        for (int i=0; i<listtitles.length && i<listicons.length; i++) {
-            CardInfo current = new CardInfo();
-            current.title = listtitles[i];
-            current.iconId = listicons[i];
+    public List<EventItem> getData() {
+        List<EventItem> data = new ArrayList<>();
+        for (int i=6; i<9 ; i++) {
+            EventItem current ;
+            current = EventContent.ITEMS.get(i);
+
             data.add(current);
         }
         return data;
     }
 
-    private class MyAdapter extends ArrayAdapter<CardInfo> {
+    private class MyAdapter extends ArrayAdapter<EventItem> {
 
         public MyAdapter() {
             super(getActivity(), R.layout.card_list_item, dataCurrent);
@@ -83,16 +86,17 @@ public class ThirdHome extends Fragment {
             if (itemView == null)
                 itemView = getActivity().getLayoutInflater().inflate(R.layout.card_list_item, parent, false);
 
-            CardInfo currentCard = dataCurrent.get(position);
+            EventItem currentCard = dataCurrent.get(position);
 
             TextView titleView = (TextView) myView.findViewById(R.id.card_list_label);
-            titleView.setText("Trending");
-            titleView.isClickable();
+            titleView.setText("Trending Events");
+            titleView.clearFocus();
             ImageView imageView = (ImageView) itemView.findViewById(R.id.card_image);
             TextView textView = (TextView) itemView.findViewById(R.id.card_item);
-            imageView.setImageResource(currentCard.iconId);
-            imageView.setOnClickListener(null);
+            TextView textView1 = (TextView) itemView.findViewById(R.id.textView);
+            imageView.setImageResource(currentCard.icon);
             textView.setText(currentCard.title);
+            textView1.setText(currentCard.time);
 
             return itemView;
         }

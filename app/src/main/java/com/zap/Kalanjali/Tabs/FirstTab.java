@@ -1,9 +1,8 @@
-package com.zap.Kalanjali;
+package com.zap.Kalanjali.Tabs;
+
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,62 +13,83 @@ import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.zap.Kalanjali.EventActivity;
 import com.zap.Kalanjali.EventMasterFlow.EventContent;
 import com.zap.Kalanjali.EventMasterFlow.EventItem;
+import com.zap.Kalanjali.EventMasterFlow.EventList1;
+import com.zap.Kalanjali.R;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Zeeshan on 9/20/2015.
+ * A simple {@link Fragment} subclass.
+ * Use the {@link FirstTab#newInstance} factory method to
+ * create an instance of this fragment.
  */
-public class FirstHome extends Fragment {
+public class FirstTab extends Fragment {
 
-    private static final int HOME_ARG = 2222;
+    private static final int FIRST_DAY_LIST = 1212;
 
     List<EventItem> dataCurrent = getData();
+    private View myView;
 
-    View myView;
-    @Nullable
+    public static FirstTab newInstance() {
+        FirstTab fragment = new FirstTab();
+        return fragment;
+    }
+
+    public FirstTab() {
+        // Required empty public constructor
+    }
+
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        myView = inflater.inflate(R.layout.card_list, container, false);
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        myView = inflater.inflate(R.layout.event_list_fragment, container, false);
+
         populateList();
         registerClick();
+
         return myView;
     }
 
     public void populateList() {
 
         ArrayAdapter<EventItem> adapter = new MyAdapter();
-        ListView listView = (ListView) myView.findViewById(R.id.listView);
+        ListView listView = (ListView) myView.findViewById(R.id.event_list);
         listView.setAdapter(adapter);
 
     }
 
     private void registerClick() {
-        ListView list = (ListView) myView.findViewById(R.id.listView);
+        ListView list = (ListView) myView.findViewById(R.id.event_list);
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(getActivity(), EventActivity.class);
                 Bundle b = new Bundle();
                 b.putInt("key", position);
-                b.putInt("arg", HOME_ARG);
+                b.putInt("arg", FIRST_DAY_LIST);
                 intent.putExtras(b);
                 startActivity(intent);
             }
         });
+        list.setDividerHeight(50);
         list.clearFocus();
         list.setFocusable(false);
     }
 
     public List<EventItem> getData() {
         List<EventItem> data = new ArrayList<>();
-        for (int i=0; i<3 ; i++) {
-            EventItem current = new EventItem();
+        for (int i=0; i<7 ; i++) {
+            EventItem current;
             current = EventContent.ITEMS.get(i);
-
             data.add(current);
         }
         return data;
@@ -85,13 +105,10 @@ public class FirstHome extends Fragment {
         public View getView(int position, View convertView, ViewGroup parent) {
             View itemView = convertView;
             if (itemView == null)
-                itemView = getActivity().getLayoutInflater().inflate(R.layout.card_list_item, parent, false);
+                itemView = getActivity().getLayoutInflater().inflate(R.layout.event_list_item, parent, false);
 
             EventItem currentCard = dataCurrent.get(position);
 
-            TextView titleView = (TextView) myView.findViewById(R.id.card_list_label);
-            titleView.setText("Music Events");
-            titleView.clearFocus();
             ImageView imageView = (ImageView) itemView.findViewById(R.id.card_image);
             TextView textView = (TextView) itemView.findViewById(R.id.card_item);
             TextView textView1 = (TextView) itemView.findViewById(R.id.textView);

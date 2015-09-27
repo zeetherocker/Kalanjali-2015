@@ -1,53 +1,53 @@
 package com.zap.Kalanjali;
 
-
-import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
-import android.support.v7.app.ActionBarActivity;
-import android.view.LayoutInflater;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ImageView;
-import android.widget.ListView;
-import android.widget.TextView;
 
-import com.zap.Kalanjali.EventMasterFlow.EventContent;
-import com.zap.Kalanjali.EventMasterFlow.EventList1;
 import com.zap.Kalanjali.Tabs.FirstTab;
 import com.zap.Kalanjali.Tabs.SecondTab;
 import com.zap.Kalanjali.Tabs.SlidingTabLayout;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
- * Created by Zeeshan on 9/15/2015.
+ * Created by Zeeshan on 9/27/2015.
  */
-public class EventTabsList extends ActionBarActivity {
+public class EventListActivity extends AppCompatActivity {
 
     private View myView;
     private ViewPager mPager;
     private SlidingTabLayout mTabs;
 
-    @Nullable
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        myView = inflater.inflate(R.layout.event_tabs_list, container, false);
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.event_tabs_list);
+        initActionBar();
 
-        mPager = (ViewPager) myView.findViewById(R.id.pager);
+
+        mPager = (ViewPager) findViewById(R.id.pager);
         mPager.setAdapter(new MyPagerAdapter(getSupportFragmentManager()));
-        mTabs = (SlidingTabLayout) myView.findViewById(R.id.tabs_view);
+        mTabs = (SlidingTabLayout) findViewById(R.id.tabs_view);
         mTabs.setViewPager(mPager);
         mTabs.setSelectedIndicatorColors(getResources().getColor(R.color.white));
 
-        return myView;
+    }
+
+    public void initActionBar() {
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar_tabs);
+        setSupportActionBar(toolbar);
+        toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                EventListActivity.this.onBackPressed();
+            }
+        });
+        getSupportActionBar().setHomeButtonEnabled(true);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     class MyPagerAdapter extends FragmentPagerAdapter {
@@ -86,4 +86,5 @@ public class EventTabsList extends ActionBarActivity {
             return 2;
         }
     }
+
 }

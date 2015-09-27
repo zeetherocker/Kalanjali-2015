@@ -14,6 +14,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.zap.Kalanjali.EventMasterFlow.EventContent;
+import com.zap.Kalanjali.EventMasterFlow.EventItem;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -23,7 +24,9 @@ import java.util.List;
  */
 public class SecondHome extends Fragment {
 
-    List<EventContent.EventItem> dataCurrent = getData();
+    private static final int HOME_ARG = 2222;
+
+    List<EventItem> dataCurrent = getData();
 
     View myView;
     @Nullable
@@ -37,7 +40,7 @@ public class SecondHome extends Fragment {
 
     public void populateList() {
 
-        ArrayAdapter<EventContent.EventItem> adapter = new MyAdapter();
+        ArrayAdapter<EventItem> adapter = new MyAdapter();
         ListView listView = (ListView) myView.findViewById(R.id.listView);
         listView.setAdapter(adapter);
 
@@ -51,6 +54,7 @@ public class SecondHome extends Fragment {
                 Intent intent = new Intent(getActivity(), EventActivity.class);
                 Bundle b = new Bundle();
                 b.putInt("key", position+3);
+                b.putInt("arg", HOME_ARG);
                 intent.putExtras(b);
                 startActivity(intent);
             }
@@ -59,10 +63,10 @@ public class SecondHome extends Fragment {
         list.setFocusable(false);
     }
 
-    public List<EventContent.EventItem> getData() {
-        List<EventContent.EventItem> data = new ArrayList<>();
+    public List<EventItem> getData() {
+        List<EventItem> data = new ArrayList<>();
         for (int i=3; i<6 ; i++) {
-            EventContent.EventItem current = new EventContent.EventItem();
+            EventItem current ;
             current = EventContent.ITEMS.get(i);
 
             data.add(current);
@@ -70,7 +74,7 @@ public class SecondHome extends Fragment {
         return data;
     }
 
-    private class MyAdapter extends ArrayAdapter<EventContent.EventItem> {
+    private class MyAdapter extends ArrayAdapter<EventItem> {
 
         public MyAdapter() {
             super(getActivity(), R.layout.card_list_item, dataCurrent);
@@ -82,10 +86,10 @@ public class SecondHome extends Fragment {
             if (itemView == null)
                 itemView = getActivity().getLayoutInflater().inflate(R.layout.card_list_item, parent, false);
 
-            EventContent.EventItem currentCard = dataCurrent.get(position);
+            EventItem currentCard = dataCurrent.get(position);
 
             TextView titleView = (TextView) myView.findViewById(R.id.card_list_label);
-            titleView.setText("Music Events");
+            titleView.setText("Dance Events");
             titleView.clearFocus();
             ImageView imageView = (ImageView) itemView.findViewById(R.id.card_image);
             TextView textView = (TextView) itemView.findViewById(R.id.card_item);

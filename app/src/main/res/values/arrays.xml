@@ -20,4 +20,99 @@
         <item>@drawable/ic_maps</item>
     </array>
 
+    <!-- Event Tab Titles -->
+    <string-array name="tabs_title">
+        <item>Day 1</item>
+        <item>Day 2</item>
+    </string-array>
+
+    <!-- Music Event Titles -->
+    <string-array name="music_event_title">
+        <item>Music Event 1</item>
+        <item>Music Event 2</item>
+        <item>Music Event 3</item>
+    </string-array>
+
+    <!-- Dance Event Titles -->
+    <string-array name="dance_event_title">
+        <item>Dance Event 1</item>
+        <item>Dance Event 2</item>
+        <item>Dance Event 3</item>
+    </string-array>
+
+    <!-- Trending Event Titles -->
+    <string-array name="trending_event_title">
+        <item>Trending Event 1</item>
+        <item>Trending Event 2</item>
+        <item>Trending Event 3</item>
+    </string-array>
+
+    <!-- Music Event Time -->
+    <string-array name="music_time">
+        <item>9.00 AM</item>
+        <item>10.00 AM</item>
+        <item>11.00 AM</item>
+    </string-array>
+
+    <!-- Dance Event Time -->
+    <string-array name="dance_time">
+        <item>12.00 PM</item>
+        <item>1.00 PM</item>
+        <item>2.00 PM</item>
+    </string-array>
+
+    <!-- Trending Event Time -->
+    <string-array name="trending_time">
+        <item>3.00 PM</item>
+        <item>4.00 PM</item>
+        <item>5.00 PM</item>
+    </string-array>
+
+    <integer-array name="icon_array">
+        <item>@drawable/ic_card1</item>
+        <item>@drawable/ic_card2</item>
+        <item>@drawable/ic_card3</item>
+    </integer-array>
+
+    <!-- Day 1 List -->
+
+    <string-array name="day1_titles">
+        <item>Event 1</item>
+        <item>Event 2</item>
+        <item>Event 3</item>
+        <item>Event 4</item>
+        <item>Event 5</item>
+        <item>Event 6</item>
+        <item>Event 7</item>
+        <item>Event 8</item>
+        <item>Event 9</item>
+        <item>Event 10</item>
+    </string-array>
+
+    <string-array name="day1_desc">
+        <item>Event 1 Description</item>
+        <item>Event 2 Description</item>
+        <item>Event 3 Description</item>
+        <item>Event 4 Description</item>
+        <item>Event 5 Description</item>
+        <item>Event 6 Description</item>
+        <item>Event 7 Description</item>
+        <item>Event 8 Description</item>
+        <item>Event 9 Description</item>
+        <item>Event 10 Description</item>
+    </string-array>
+
+    <string-array name="day1_time">
+        <item>9.00 AM</item>
+        <item>10.00 AM</item>
+        <item>11.00 AM</item>
+        <item>12.00 PM</item>
+        <item>1.00 PM</item>
+        <item>2.00 PM</item>
+        <item>3.00 PM</item>
+        <item>3.00 PM</item>
+        <item>4.00 PM</item>
+        <item>5.00 PM</item>
+    </string-array>
+
 </resources>
