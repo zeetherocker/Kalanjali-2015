@@ -140,4 +140,17 @@
     <string name="day2_time9">4.00 PM</string>
     <string name="day2_time10">5.00 PM</string>
 
+    <!--Maps-->
+    <string name="title_mvit">MVIT</string>
+    <string name="title_science">Science Block</string>
+    <string name="title_newblock">New Block (EC,CS,IS,TC)</string>
+    <string name="title_audi">New Auditorium</string>
+    <string name="title_oldaudi">Old Auditorium</string>
+    <string name="title_parking">Parking Lot</string>
+    <string name="title_coffee">Coffee Shop</string>
+    <string name="title_canteen">Canteen</string>
+    <string name="title_mech">Mechanical Block</string>
+    <string name="title_civil">Civil and EEE Block</string>
+    <string name="title_library">Library</string>
+
 </resources>

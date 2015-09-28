@@ -53,7 +53,7 @@ public class ThirdHome extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(getActivity(), EventActivity.class);
                 Bundle b = new Bundle();
-                b.putInt("pos", position+3);
+                b.putInt("pos", position+6);
                 b.putInt("arg", HOME_ARG);
                 intent.putExtras(b);
                 startActivity(intent);

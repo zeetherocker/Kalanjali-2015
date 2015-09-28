@@ -17,6 +17,7 @@ import com.zap.Kalanjali.EventActivity;
 import com.zap.Kalanjali.EventMasterFlow.EventContent;
 import com.zap.Kalanjali.EventMasterFlow.EventItem;
 import com.zap.Kalanjali.EventMasterFlow.EventList1;
+import com.zap.Kalanjali.EventMasterFlow.EventList2;
 import com.zap.Kalanjali.R;
 
 import java.util.ArrayList;
@@ -86,9 +87,9 @@ public class SecondTab extends Fragment {
 
     public List<EventItem> getData() {
         List<EventItem> data = new ArrayList<>();
-        for (int i=0; i<7 ; i++) {
+        for (int i=0; i<EventList2.ITEMS.size() ; i++) {
             EventItem current;
-            current = EventContent.ITEMS.get(i);
+            current = EventList2.ITEMS.get(i);
             data.add(current);
         }
         return data;

@@ -4,25 +4,26 @@ package com.zap.Kalanjali;
 import android.animation.Animator;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
 import android.view.animation.AnimationUtils;
 import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.getbase.floatingactionbutton.FloatingActionButton;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollViewCallbacks;
 import com.github.ksoichiro.android.observablescrollview.ScrollState;
 import com.nineoldandroids.view.ViewHelper;
@@ -30,9 +31,6 @@ import com.zap.Kalanjali.EventMasterFlow.EventContent;
 import com.zap.Kalanjali.EventMasterFlow.EventItem;
 import com.zap.Kalanjali.EventMasterFlow.EventList1;
 import com.zap.Kalanjali.EventMasterFlow.EventList2;
-
-import butterknife.ButterKnife;
-import butterknife.InjectView;
 
 
 /**
@@ -77,6 +75,7 @@ public class EventActivity extends AppCompatActivity implements ObservableScroll
     int string = 1;
     int string1 = 0;
     int arg;
+    int eventLocationId;
 
     public EventActivity() {
     }
@@ -115,19 +114,21 @@ public class EventActivity extends AppCompatActivity implements ObservableScroll
                 CurrentItem = EventContent.ITEMS.get(ItemPos);
                 mTitle.setText(getString(CurrentItem.title));
                 mEventDesc.setText(getString(CurrentItem.event_desc));
+                eventLocationId = CurrentItem.eventLocationId;
                 break;
 
             case FIRST_DAY_LIST :
                 CurrentItem = EventList1.ITEMS.get(ItemPos);
                 mTitle.setText(getString(CurrentItem.title));
                 mEventDesc.setText(getString(CurrentItem.event_desc));
-
+                eventLocationId = CurrentItem.eventLocationId;
                 break;
 
             case SECOND_DAY_LIST :
                 CurrentItem = EventList2.ITEMS.get(ItemPos);
                 mTitle.setText(getString(CurrentItem.title));
                 mEventDesc.setText(getString(CurrentItem.event_desc));
+                eventLocationId = CurrentItem.eventLocationId;
                 break;
 
         }
@@ -135,9 +136,13 @@ public class EventActivity extends AppCompatActivity implements ObservableScroll
 
         configureToolbarView();
         configureScrollView();
+        getFloatingActionButton();
 
     }
 
+    public void getFloatingActionButton() {
+
+    }
 
     private void configureScrollView() {
         mScrollView.setScrollViewCallbacks(this);
@@ -202,8 +207,37 @@ public class EventActivity extends AppCompatActivity implements ObservableScroll
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        if (arg == MAIN_ARG)
+            getMenuInflater().inflate(R.menu.menu_main, menu);
+        else
+            getMenuInflater().inflate(R.menu.menu_event, menu);
         return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_settings) {
+            startActivity(new Intent(this, SettingsActivity.class));
+            return true;
+        }
+
+        if (id == R.id.action_maps) {
+            Intent intent = new Intent(this, Locate_us.class);
+            Bundle b = new Bundle();
+            b.putInt("cameraPos", eventLocationId);
+            intent.putExtras(b);
+            startActivity(intent);
+            return true;
+
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
     @Override

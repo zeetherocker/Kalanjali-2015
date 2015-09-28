@@ -87,9 +87,9 @@ public class FirstTab extends Fragment {
 
     public List<EventItem> getData() {
         List<EventItem> data = new ArrayList<>();
-        for (int i=0; i<7 ; i++) {
+        for (int i=0; i<EventList1.ITEMS.size() ; i++) {
             EventItem current;
-            current = EventContent.ITEMS.get(i);
+            current = EventList1.ITEMS.get(i);
             data.add(current);
         }
         return data;
