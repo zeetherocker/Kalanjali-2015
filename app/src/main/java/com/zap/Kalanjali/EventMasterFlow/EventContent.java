@@ -22,15 +22,15 @@ public class EventContent {
 
     static {
         // Add 3 sample items.
-        addItem(new EventItem("Music Event 1", R.drawable.ic_card1, "Event Description for Event 1\nEvent Description for Event 1\nEvent Description for Event 1\nEvent Description for Event 1\nEvent Description for Event 1", "12.00 PM"));
-        addItem(new EventItem("Music Event 2", R.drawable.ic_card2, "Event Description for Event 2", "01.00 PM"));
-        addItem(new EventItem("Music Event 3", R.drawable.ic_card3, "Event Description for Event 3", "02.00 PM"));
-        addItem(new EventItem("Dance Event 1", R.drawable.ic_card1, "Event Description for Event 4", "03.00 PM"));
-        addItem(new EventItem("Dance Event 2", R.drawable.ic_card2, "Event Description for Event 5", "04.00 PM"));
-        addItem(new EventItem("Dance Event 3", R.drawable.ic_card3, "Event Description for Event 6", "05.00 PM"));
-        addItem(new EventItem("Trending Event 3", R.drawable.ic_card1, "Event Description for Event 7", "06.00 PM"));
-        addItem(new EventItem("Trending Event 3", R.drawable.ic_card2, "Event Description for Event 8", "07.00 PM"));
-        addItem(new EventItem("Trending Event 3", R.drawable.ic_card3, "Event Description for Event 9", "08.00 PM"));
+        addItem(new EventItem(R.string.first_home1, R.drawable.ic_card1, R.string.first_home_desc1, R.string.first_home_time1));
+        addItem(new EventItem(R.string.first_home2, R.drawable.ic_card2, R.string.first_home_desc2, R.string.first_home_time2));
+        addItem(new EventItem(R.string.first_home3, R.drawable.ic_card3, R.string.first_home_desc3, R.string.first_home_time3));
+        addItem(new EventItem(R.string.second_home1, R.drawable.ic_card1, R.string.second_home_desc1, R.string.second_home_time1));
+        addItem(new EventItem(R.string.second_home2, R.drawable.ic_card2, R.string.second_home_desc2, R.string.second_home_time2));
+        addItem(new EventItem(R.string.second_home3, R.drawable.ic_card3, R.string.second_home_desc3, R.string.second_home_time3));
+        addItem(new EventItem(R.string.third_home1, R.drawable.ic_card1, R.string.third_home_desc1, R.string.third_home_time1));
+        addItem(new EventItem(R.string.third_home2, R.drawable.ic_card2, R.string.third_home_desc2, R.string.third_home_time2));
+        addItem(new EventItem(R.string.third_home3, R.drawable.ic_card3, R.string.third_home_desc3, R.string.third_home_time3));
     }
 
     private static void addItem(EventItem item) {

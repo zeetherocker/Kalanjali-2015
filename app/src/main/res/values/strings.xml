@@ -16,7 +16,128 @@
     <string name="title_activity_event">Event Activity</string>
     <string name="title_activity_event_list">Event List</string>
     <string name="title_activity_maps">Map</string>
+
+    <!-- Main Home Event-->
     <string name="title_main_event">Kalanjali-2015</string>
     <string name="main_event_desc">\t\t Sir M.Visvesvaraya Institute of Technology, Bengaluru has been conducting Kalanjali an annual inter-collegiate Techno-Cultural Fest successfully since the year 1996.\n\n\n\t\tKalanjali has been setting the stage for the student community to show their talent, innovation and creativity with zeal and zest. Kalanjali 2015 is scheduled to be held on 30th and 31st October 2015.</string>
+
+    <!-- First Card in Home Screen -->
+    <!--Titles-->
+    <string name="first_home1">Music Event 1</string>
+    <string name="first_home2">Music Event 2</string>
+    <string name="first_home3">Music Event 3</string>
+    <!--Description-->
+    <string name="first_home_desc1">Music Event 1 Description</string>
+    <string name="first_home_desc2">Music Event 2 Description</string>
+    <string name="first_home_desc3">Music Event 3 Description</string>
+    <!--Time-->
+    <string name="first_home_time1">9.00 AM</string>
+    <string name="first_home_time2">10.00 AM</string>
+    <string name="first_home_time3">11.00 AM</string>
+
+
+    <!-- Second Card in Home Screen -->
+    <!--Titles-->
+    <string name="second_home1">Dance Event 1</string>
+    <string name="second_home2">Dance Event 2</string>
+    <string name="second_home3">Dance Event 3</string>
+    <!--Description-->
+    <string name="second_home_desc1">Dance Event 1 Description</string>
+    <string name="second_home_desc2">Dance Event 2 Description</string>
+    <string name="second_home_desc3">Dance Event 3 Description</string>
+    <!--Time-->
+    <string name="second_home_time1">12.00 PM</string>
+    <string name="second_home_time2">1.00 PM</string>
+    <string name="second_home_time3">2.00 PM</string>
+
+    <!-- Trending Card in Home Screen -->
+    <!--Titles-->
+    <string name="third_home1">Trending Event 1</string>
+    <string name="third_home2">Trending Event 2</string>
+    <string name="third_home3">Trending Event 3</string>
+    <!--Description-->
+    <string name="third_home_desc1">Trending Event 1 Description</string>
+    <string name="third_home_desc2">Trending Event 2 Description</string>
+    <string name="third_home_desc3">Trending Event 3 Description</string>
+    <!--Time-->
+    <string name="third_home_time1">3.00 PM</string>
+    <string name="third_home_time2">4.00 PM</string>
+    <string name="third_home_time3">5.00 PM</string>
+
+    <!-- DAY 1 Events -->
+
+    <!-- Event Titles -->
+    <string name="day1_event1">Event 1</string>
+    <string name="day1_event2">Event 2</string>
+    <string name="day1_event3">Event 3</string>
+    <string name="day1_event4">Event 4</string>
+    <string name="day1_event5">Event 5</string>
+    <string name="day1_event6">Event 6</string>
+    <string name="day1_event7">Event 7</string>
+    <string name="day1_event8">Event 8</string>
+    <string name="day1_event9">Event 9</string>
+    <string name="day1_event10">Event 10</string>
+
+    <!-- Event Description -->
+    <string name="day1_desc1">Event 1 Description</string>
+    <string name="day1_desc2">Event 2 Description</string>
+    <string name="day1_desc3">Event 3 Description</string>
+    <string name="day1_desc4">Event 4 Description</string>
+    <string name="day1_desc5">Event 5 Description</string>
+    <string name="day1_desc6">Event 6 Description</string>
+    <string name="day1_desc7">Event 7 Description</string>
+    <string name="day1_desc8">Event 8 Description</string>
+    <string name="day1_desc9">Event 9 Description</string>
+    <string name="day1_desc10">Event 10 Description</string>
+
+    <!-- Time -->
+    <string name="day1_time1">8.00 AM</string>
+    <string name="day1_time2">9.00 AM</string>
+    <string name="day1_time3">10.00 AM</string>
+    <string name="day1_time4">11.00 AM</string>
+    <string name="day1_time5">12.00 PM</string>
+    <string name="day1_time6">1.00 PM</string>
+    <string name="day1_time7">2.00 PM</string>
+    <string name="day1_time8">3.00 PM</string>
+    <string name="day1_time9">4.00 PM</string>
+    <string name="day1_time10">5.00 PM</string>
+
+    <!-- DAY 2 Events -->
+
+    <!-- Event Titles -->
+    <string name="day2_event1">Event 1</string>
+    <string name="day2_event2">Event 2</string>
+    <string name="day2_event3">Event 3</string>
+    <string name="day2_event4">Event 4</string>
+    <string name="day2_event5">Event 5</string>
+    <string name="day2_event6">Event 6</string>
+    <string name="day2_event7">Event 7</string>
+    <string name="day2_event8">Event 8</string>
+    <string name="day2_event9">Event 9</string>
+    <string name="day2_event10">Event 10</string>
+
+    <!-- Event Description -->
+    <string name="day2_desc1">Event 1 Description</string>
+    <string name="day2_desc2">Event 2 Description</string>
+    <string name="day2_desc3">Event 3 Description</string>
+    <string name="day2_desc4">Event 4 Description</string>
+    <string name="day2_desc5">Event 5 Description</string>
+    <string name="day2_desc6">Event 6 Description</string>
+    <string name="day2_desc7">Event 7 Description</string>
+    <string name="day2_desc8">Event 8 Description</string>
+    <string name="day2_desc9">Event 9 Description</string>
+    <string name="day2_desc10">Event 10 Description</string>
+
+    <!-- Time -->
+    <string name="day2_time1">8.00 AM</string>
+    <string name="day2_time2">9.00 AM</string>
+    <string name="day2_time3">10.00 AM</string>
+    <string name="day2_time4">11.00 AM</string>
+    <string name="day2_time5">12.00 PM</string>
+    <string name="day2_time6">1.00 PM</string>
+    <string name="day2_time7">2.00 PM</string>
+    <string name="day2_time8">3.00 PM</string>
+    <string name="day2_time9">4.00 PM</string>
+    <string name="day2_time10">5.00 PM</string>
 
 </resources>
