@@ -28,6 +28,8 @@ import com.github.ksoichiro.android.observablescrollview.ScrollState;
 import com.nineoldandroids.view.ViewHelper;
 import com.zap.Kalanjali.EventMasterFlow.EventContent;
 import com.zap.Kalanjali.EventMasterFlow.EventItem;
+import com.zap.Kalanjali.EventMasterFlow.EventList1;
+import com.zap.Kalanjali.EventMasterFlow.EventList2;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
@@ -98,27 +100,34 @@ public class EventActivity extends AppCompatActivity implements ObservableScroll
 
         Bundle b = getIntent().getExtras();
         arg = b.getInt("arg");
-        ItemPos = b.getInt("key");
+        ItemPos = b.getInt("pos");
         string = b.getInt("title");
         string1 = b.getInt("desc");
 
         switch (arg) {
             case MAIN_ARG:
-
                 mTitle.setText(getString(string));
                 mEventDesc.setText(getString(string1));
                 mextraView.setMinimumHeight((int) getResources().getDimension(R.dimen.extra_view_height));
                 break;
+
             case HOME_ARG :
-
                 CurrentItem = EventContent.ITEMS.get(ItemPos);
-                mTitle.setText(CurrentItem.title);
-                mEventDesc.setText(CurrentItem.event_desc);
+                mTitle.setText(getString(CurrentItem.title));
+                mEventDesc.setText(getString(CurrentItem.event_desc));
                 break;
+
             case FIRST_DAY_LIST :
+                CurrentItem = EventList1.ITEMS.get(ItemPos);
+                mTitle.setText(getString(CurrentItem.title));
+                mEventDesc.setText(getString(CurrentItem.event_desc));
 
                 break;
+
             case SECOND_DAY_LIST :
+                CurrentItem = EventList2.ITEMS.get(ItemPos);
+                mTitle.setText(getString(CurrentItem.title));
+                mEventDesc.setText(getString(CurrentItem.event_desc));
                 break;
 
         }

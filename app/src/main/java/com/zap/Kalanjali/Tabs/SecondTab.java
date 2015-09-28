@@ -74,7 +74,7 @@ public class SecondTab extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(getActivity(), EventActivity.class);
                 Bundle b = new Bundle();
-                b.putInt("key", position);
+                b.putInt("pos", position);
                 b.putInt("arg", SECOND_DAY_LIST);
                 intent.putExtras(b);
                 startActivity(intent);

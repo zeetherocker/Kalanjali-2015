@@ -53,7 +53,7 @@ public class SecondHome extends Fragment {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Intent intent = new Intent(getActivity(), EventActivity.class);
                 Bundle b = new Bundle();
-                b.putInt("key", position+3);
+                b.putInt("pos", position+3);
                 b.putInt("arg", HOME_ARG);
                 intent.putExtras(b);
                 startActivity(intent);
