@@ -79,7 +79,6 @@ public class Day1EventList extends Fragment {
                 startActivity(intent);
             }
         });
-        list.setDividerHeight(50);
         list.clearFocus();
         list.setFocusable(false);
     }
