@@ -23,60 +23,65 @@
 
     <!-- First Card in Home Screen -->
     <!--Titles-->
-    <string name="first_home1">Music Event 1</string>
-    <string name="first_home2">Music Event 2</string>
-    <string name="first_home3">Music Event 3</string>
+    <string name="first_home1">Battle of Bands</string>
+    <string name="first_home2">Indian Group Song</string>
+    <string name="first_home3">Anthyakshari (Hindi, Kannada)</string>
     <!--Description-->
     <string name="first_home_desc1">Music Event 1 Description</string>
     <string name="first_home_desc2">Music Event 2 Description</string>
     <string name="first_home_desc3">Music Event 3 Description</string>
     <!--Time-->
     <string name="first_home_time1">9.00 AM</string>
-    <string name="first_home_time2">10.00 AM</string>
-    <string name="first_home_time3">11.00 AM</string>
+    <string name="first_home_time2">Day-2 10.30 AM</string>
+    <string name="first_home_time3">Day-2 9.30 AM</string>
 
 
     <!-- Second Card in Home Screen -->
     <!--Titles-->
-    <string name="second_home1">Dance Event 1</string>
-    <string name="second_home2">Dance Event 2</string>
-    <string name="second_home3">Dance Event 3</string>
+    <string name="second_home1">Filmy Group Dance</string>
+    <string name="second_home2">Solo Classical Dance</string>
+    <string name="second_home3">Solo Filmy Dance</string>
     <!--Description-->
     <string name="second_home_desc1">Dance Event 1 Description</string>
     <string name="second_home_desc2">Dance Event 2 Description</string>
     <string name="second_home_desc3">Dance Event 3 Description</string>
     <!--Time-->
-    <string name="second_home_time1">12.00 PM</string>
-    <string name="second_home_time2">1.00 PM</string>
-    <string name="second_home_time3">2.00 PM</string>
+    <string name="second_home_time1">Day-2 2.00 PM</string>
+    <string name="second_home_time2">Day-1 2.30 PM</string>
+    <string name="second_home_time3">Day-1 12.00 PM</string>
 
     <!-- Trending Card in Home Screen -->
     <!--Titles-->
-    <string name="third_home1">Trending Event 1</string>
-    <string name="third_home2">Trending Event 2</string>
-    <string name="third_home3">Trending Event 3</string>
+    <string name="third_home1">Fashion Show</string>
+    <string name="third_home2">FootBall</string>
+    <string name="third_home3">Street Play</string>
     <!--Description-->
     <string name="third_home_desc1">Trending Event 1 Description</string>
     <string name="third_home_desc2">Trending Event 2 Description</string>
     <string name="third_home_desc3">Trending Event 3 Description</string>
     <!--Time-->
-    <string name="third_home_time1">3.00 PM</string>
-    <string name="third_home_time2">4.00 PM</string>
-    <string name="third_home_time3">5.00 PM</string>
+    <string name="third_home_time1">Day-2 3.30 PM</string>
+    <string name="third_home_time2">Day-1 12.00 PM</string>
+    <string name="third_home_time3">Day-1 2.30 PM</string>
 
     <!-- DAY 1 Events -->
 
     <!-- Event Titles -->
-    <string name="day1_event1">Event 1</string>
-    <string name="day1_event2">Event 2</string>
-    <string name="day1_event3">Event 3</string>
-    <string name="day1_event4">Event 4</string>
-    <string name="day1_event5">Event 5</string>
-    <string name="day1_event6">Event 6</string>
-    <string name="day1_event7">Event 7</string>
-    <string name="day1_event8">Event 8</string>
-    <string name="day1_event9">Event 9</string>
-    <string name="day1_event10">Event 10</string>
+    <string name="day1_event1">Filmy Dance (Solo) </string>
+    <string name="day1_event2">Classical Vocal Solo</string>
+    <string name="day1_event3">Face Painting</string>
+    <string name="day1_event4">Technical Quiz</string>
+    <string name="day1_event5">Western Vocal Solo</string>
+    <string name="day1_event6">Photography</string>
+    <string name="day1_event7">Essay Writing</string>
+    <string name="day1_event8">Debate (Eng,Kan,Hindi)</string>
+    <string name="day1_event9">Rangoli</string>
+    <string name="day1_event10">Classical Dance (Solo)</string>
+    <string name="day1_event11">Western Group Song</string>
+    <string name="day1_event12">JAM</string>
+    <string name="day1_event13">Street Play</string>
+    <string name="day1_event14">Poetry Recitation (Eng,Kan,Hindi)</string>
+    <string name="day1_event15">Collage</string>
 
     <!-- Event Description -->
     <string name="day1_desc1">Event 1 Description</string>
@@ -89,32 +94,52 @@
     <string name="day1_desc8">Event 8 Description</string>
     <string name="day1_desc9">Event 9 Description</string>
     <string name="day1_desc10">Event 10 Description</string>
+    <string name="day1_desc11">Event 11 Description</string>
+    <string name="day1_desc12">Event 12 Description</string>
+    <string name="day1_desc13">Event 13 Description</string>
+    <string name="day1_desc14">Event 14 Description</string>
+    <string name="day1_desc15">Event 15 Description</string>
 
     <!-- Time -->
-    <string name="day1_time1">8.00 AM</string>
-    <string name="day1_time2">9.00 AM</string>
-    <string name="day1_time3">10.00 AM</string>
-    <string name="day1_time4">11.00 AM</string>
-    <string name="day1_time5">12.00 PM</string>
-    <string name="day1_time6">1.00 PM</string>
-    <string name="day1_time7">2.00 PM</string>
-    <string name="day1_time8">3.00 PM</string>
-    <string name="day1_time9">4.00 PM</string>
-    <string name="day1_time10">5.00 PM</string>
+    <string name="day1_time1">12.00 PM - 2.00 PM</string>
+    <string name="day1_time2">12.00 PM - 2.00 PM</string>
+    <string name="day1_time3">12.00 PM - 2.00 PM</string>
+    <string name="day1_time4">12.00 PM - 2.00 PM</string>
+    <string name="day1_time5">12.00 PM - 2.00 PM</string>
+    <string name="day1_time6">12.00 PM - 2.00 PM</string>
+    <string name="day1_time7">12.00 PM - 2.00 PM</string>
+    <string name="day1_time8">12.00 PM - 2.00 PM</string>
+    <string name="day1_time9">12.00 PM - 2.00 PM</string>
+    <string name="day1_time10">2.00 PM - 4.00 PM</string>
+    <string name="day1_time11">2.00 PM - 4.00 PM</string>
+    <string name="day1_time12">2.00 PM - 4.00 PM</string>
+    <string name="day1_time13">2.00 PM - 4.00 PM</string>
+    <string name="day1_time14">2.00 PM - 4.00 PM</string>
+    <string name="day1_time15">2.00 PM - 4.00 PM</string>
 
     <!-- DAY 2 Events -->
 
     <!-- Event Titles -->
-    <string name="day2_event1">Event 1</string>
-    <string name="day2_event2">Event 2</string>
-    <string name="day2_event3">Event 3</string>
-    <string name="day2_event4">Event 4</string>
-    <string name="day2_event5">Event 5</string>
-    <string name="day2_event6">Event 6</string>
-    <string name="day2_event7">Event 7</string>
-    <string name="day2_event8">Event 8</string>
-    <string name="day2_event9">Event 9</string>
-    <string name="day2_event10">Event 10</string>
+    <string name="day2_event1">Anthakshari (Hindi)</string>
+    <string name="day2_event2">Anthakshari (Kannada)</string>
+    <string name="day2_event3">Filmy Light Vocal (Solo)</string>
+    <string name="day2_event4">Non Filmy Light Vocal (Solo)</string>
+    <string name="day2_event5">Classical Instrument (Percussion)</string>
+    <string name="day2_event6">Classical Instrument (Non-Percussion)</string>
+    <string name="day2_event7">Skit</string>
+    <string name="day2_event8">General Quiz</string>
+    <string name="day2_event9">Model Making</string>
+    <string name="day2_event10">Mock Placements</string>
+    <string name="day2_event11">Cartooning</string>
+    <string name="day2_event12">Indian Group Song</string>
+    <string name="day2_event13">Dumb Charades</string>
+    <string name="day2_event14">One Act Play</string>
+    <string name="day2_event15">Grill</string>
+    <string name="day2_event16">On Spot Painting</string>
+    <string name="day2_event17">Filmy Group Dance</string>
+    <string name="day2_event18">Poster Making</string>
+    <string name="day2_event19">Mime</string>
+    <string name="day2_event20">Fashion Show</string>
 
     <!-- Event Description -->
     <string name="day2_desc1">Event 1 Description</string>
@@ -127,18 +152,38 @@
     <string name="day2_desc8">Event 8 Description</string>
     <string name="day2_desc9">Event 9 Description</string>
     <string name="day2_desc10">Event 10 Description</string>
+    <string name="day2_desc11">Event 11 Description</string>
+    <string name="day2_desc12">Event 12 Description</string>
+    <string name="day2_desc13">Event 13 Description</string>
+    <string name="day2_desc14">Event 14 Description</string>
+    <string name="day2_desc15">Event 15 Description</string>
+    <string name="day2_desc16">Event 16 Description</string>
+    <string name="day2_desc17">Event 17 Description</string>
+    <string name="day2_desc18">Event 18 Description</string>
+    <string name="day2_desc19">Event 19 Description</string>
+    <string name="day2_desc20">Event 20 Description</string>
 
     <!-- Time -->
-    <string name="day2_time1">8.00 AM</string>
-    <string name="day2_time2">9.00 AM</string>
-    <string name="day2_time3">10.00 AM</string>
-    <string name="day2_time4">11.00 AM</string>
-    <string name="day2_time5">12.00 PM</string>
-    <string name="day2_time6">1.00 PM</string>
-    <string name="day2_time7">2.00 PM</string>
-    <string name="day2_time8">3.00 PM</string>
-    <string name="day2_time9">4.00 PM</string>
-    <string name="day2_time10">5.00 PM</string>
+    <string name="day2_time1">9.30 AM - 10.30 AM</string>
+    <string name="day2_time2">10.30 AM - 11.30 AM</string>
+    <string name="day2_time3">9.30 AM - 11.30 AM</string>
+    <string name="day2_time4">11.30 AM - 2.00 PM</string>
+    <string name="day2_time5">10.30 AM - 11.30 AM</string>
+    <string name="day2_time6">11.30 AM - 2.00 PM</string>
+    <string name="day2_time7">10.30 AM - 11.30 AM</string>
+    <string name="day2_time8">10.30 AM - 11.30 AM</string>
+    <string name="day2_time9">10.30 AM - 11.30 AM</string>
+    <string name="day2_time10">10.30 AM - 11.30 AM</string>
+    <string name="day2_time11">10.30 AM - 11.30 AM</string>
+    <string name="day2_time12">11.30 AM - 2.00 PM</string>
+    <string name="day2_time13">11.30 AM - 2.00 PM</string>
+    <string name="day2_time14">11.30 AM - 2.00 PM</string>
+    <string name="day2_time15">11.30 AM - 2.00 PM</string>
+    <string name="day2_time16">11.30 AM - 2.00 PM</string>
+    <string name="day2_time17">2.00 PM - 3.30 PM</string>
+    <string name="day2_time18">2.00 PM - 3.30 PM</string>
+    <string name="day2_time19">2.00 PM - 3.30 PM</string>
+    <string name="day2_time20">3.30 PM - 5.30 PM</string>
 
     <!--Maps-->
     <string name="title_mvit">MVIT</string>

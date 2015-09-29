@@ -27,6 +27,7 @@
         android:text="Name"
         android:gravity="top"
         android:textSize="18sp"
+        android:textColor="#000"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="25dp"
         android:layout_alignBottom="@+id/card_image"
