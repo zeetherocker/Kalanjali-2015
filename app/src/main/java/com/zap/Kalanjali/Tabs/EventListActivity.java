@@ -1,4 +1,4 @@
-package com.zap.Kalanjali;
+package com.zap.Kalanjali.Tabs;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -9,9 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-import com.zap.Kalanjali.Tabs.FirstTab;
-import com.zap.Kalanjali.Tabs.SecondTab;
-import com.zap.Kalanjali.Tabs.SlidingTabLayout;
+import com.zap.Kalanjali.R;
 
 /**
  * Created by Zeeshan on 9/27/2015.
@@ -32,9 +30,9 @@ public class EventListActivity extends AppCompatActivity {
         mPager = (ViewPager) findViewById(R.id.pager);
         mPager.setAdapter(new MyPagerAdapter(getSupportFragmentManager()));
         mTabs = (SlidingTabLayout) findViewById(R.id.tabs_view);
-        mTabs.setViewPager(mPager);
         mTabs.setSelectedIndicatorColors(getResources().getColor(R.color.white));
-
+        mTabs.setDistributeEvenly(true);
+        mTabs.setViewPager(mPager);
     }
 
     public void initActionBar() {
@@ -66,10 +64,10 @@ public class EventListActivity extends AppCompatActivity {
 
             switch (position) {
                 case 0:
-                    fragment = FirstTab.newInstance();
+                    fragment = Day1EventList.newInstance();
                     break;
                 case 1:
-                    fragment = SecondTab.newInstance();
+                    fragment = Day2EventList.newInstance();
                     break;
             }
 

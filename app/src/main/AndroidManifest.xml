@@ -57,7 +57,7 @@
                 android:value="com.zap.Kalanjali.MainActivity" />
         </activity>
         <activity
-            android:name=".EventListActivity"
+            android:name=".Tabs.EventListActivity"
             android:label="@string/title_activity_event" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"

@@ -4,22 +4,17 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <LinearLayout
+    <include
+        android:id="@+id/toolbar_tabs"
+        layout="@layout/tool_bar" />
+
+    <com.zap.Kalanjali.Tabs.SlidingTabLayout
+        android:id="@+id/tabs_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:elevation="5dp"
+        android:background="@color/colorPrimary" />
 
-        <include
-            android:id="@+id/toolbar_tabs"
-            layout="@layout/toolbar_tabs" />
-
-        <com.zap.Kalanjali.Tabs.SlidingTabLayout
-            android:id="@+id/tabs_view"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimary" />
-
-    </LinearLayout>
 
     <android.support.v4.view.ViewPager
         android:id="@+id/pager"

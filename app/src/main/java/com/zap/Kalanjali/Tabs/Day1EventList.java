@@ -14,7 +14,6 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.zap.Kalanjali.EventActivity;
-import com.zap.Kalanjali.EventMasterFlow.EventContent;
 import com.zap.Kalanjali.EventMasterFlow.EventItem;
 import com.zap.Kalanjali.EventMasterFlow.EventList1;
 import com.zap.Kalanjali.R;
@@ -24,22 +23,22 @@ import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link FirstTab#newInstance} factory method to
+ * Use the {@link Day1EventList#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class FirstTab extends Fragment {
+public class Day1EventList extends Fragment {
 
     private static final int FIRST_DAY_LIST = 1212;
 
     List<EventItem> dataCurrent = getData();
     private View myView;
 
-    public static FirstTab newInstance() {
-        FirstTab fragment = new FirstTab();
+    public static Day1EventList newInstance() {
+        Day1EventList fragment = new Day1EventList();
         return fragment;
     }
 
-    public FirstTab() {
+    public Day1EventList() {
         // Required empty public constructor
     }
 
