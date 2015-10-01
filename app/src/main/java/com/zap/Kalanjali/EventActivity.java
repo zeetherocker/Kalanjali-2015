@@ -74,6 +74,10 @@ public class EventActivity extends AppCompatActivity implements ObservableScroll
 
     private int mToolbarBackgroundColor;
     private EventItem CurrentItem = new EventItem();
+    private View mView;
+    private View mTextView;
+    private int rootheight;
+    private int textheight;
 
     int ItemPos = 0;
     int string = 1;
@@ -164,6 +168,7 @@ public class EventActivity extends AppCompatActivity implements ObservableScroll
         });
 
         final FloatingActionButton actionB = (FloatingActionButton) findViewById(R.id.action_b);
+        actionB.setIcon(R.drawable.ic_register);
         actionB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

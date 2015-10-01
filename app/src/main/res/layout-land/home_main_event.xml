@@ -39,6 +39,7 @@
         android:layout_height="32dp"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="15th - 16th Oct "
+        android:layout_alignBottom="@+id/main_event_text"
         android:layout_gravity="top"
         android:layout_marginStart="327dp"
         android:fontFamily="sans-serif-medium"
