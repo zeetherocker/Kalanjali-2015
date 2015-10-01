@@ -25,13 +25,13 @@
     <!--Titles-->
     <string name="first_home1">Battle of Bands</string>
     <string name="first_home2">Indian Group Song</string>
-    <string name="first_home3">Anthyakshari (Hindi, Kannada)</string>
+    <string name="first_home3">Western Vocal (Solo)</string>
     <!--Description-->
-    <string name="first_home_desc1">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
-    <string name="first_home_desc2">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
-    <string name="first_home_desc3">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
+    <string name="first_home_desc1">VENUE : Old Auditorium \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
+    <string name="first_home_desc2">VENUE : Old Auditorium \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.300\n2.\tDuration is 12+3 min\n3.\tMaximum of 6 singers are allowed in a group with 4 accompanists\n4.\tTeam has to present 3 songs\n5.\tSong should be either in Kannada or Hindi\n6.\tEvaluation is based on singing only not on makeup, costumes or actions of the team\n7.\tKaraoke not allowed</string>
+    <string name="first_home_desc3">VENUE : CS Seminar Hall \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.100\n2.Duration is 5+2 min3.\tEvaluation is based on Composition, Rhythm, Coordination and General Impression\n4.\tParticipants shall bring their own instruments\n5.\tOnly 2 accompanists are allowed\n6.\tLanguage of the song shall only be English\n7.\tKaraoke not allowed</string>
     <!--Time-->
-    <string name="first_home_time1">9.00 AM</string>
+    <string name="first_home_time1">Day-1 9.00 AM</string>
     <string name="first_home_time2">Day-2 10.30 AM</string>
     <string name="first_home_time3">Day-2 9.30 AM</string>
 
@@ -42,9 +42,9 @@
     <string name="second_home2">Solo Classical Dance</string>
     <string name="second_home3">Solo Filmy Dance</string>
     <!--Description-->
-    <string name="second_home_desc1">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
-    <string name="second_home_desc2">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
-    <string name="second_home_desc3">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
+    <string name="second_home_desc1">VENUE : New Auditorium \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.300\n2.\tDuration is 6+4 min\n3.\tGroup can consist of 6+6 members\n4.\tDance can be filmy or western style\n5.\tRecorded music is allowed\n6.\tEvaluation will be based on rhythm, formation, expression, costume, makeup, sets and overall effects</string>
+    <string name="second_home_desc2">VENUE : Dental Auditorium \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.100\n2.\tDuration is 8+4 min\n3.\tThe classical dance can be from any of the approved forms such as Kathak, Kathakkali, Bharathanatyam, Manipuri, Kuchipudi, Mohiniyattam, Odissi, etc.\n4.\tRecorded Music is allowed\n5.\tEvaluation will be based on technique, rhythm, abhinaya, costume, footwork and general impression</string>
+    <string name="second_home_desc3">VENUE : New Auditorium \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.100\n2.\tDuration is 5+2 min\n3.\tOnly filmy dance is allowed in this item\n4.\tRecorded music is allowed\n5.\tEvaluation will be based on technique, rhythm, abhinaya, costume, footwork and general impression</string>
     <!--Time-->
     <string name="second_home_time1">Day-2 2.00 PM</string>
     <string name="second_home_time2">Day-1 2.30 PM</string>
@@ -53,12 +53,12 @@
     <!-- Trending Card in Home Screen -->
     <!--Titles-->
     <string name="third_home1">Fashion Show</string>
-    <string name="third_home2">FootBall</string>
+    <string name="third_home2">Gully FootBall</string>
     <string name="third_home3">Street Play</string>
     <!--Description-->
-    <string name="third_home_desc1">Trending Event 1 Description</string>
-    <string name="third_home_desc2">Trending Event 2 Description</string>
-    <string name="third_home_desc3">Trending Event 3 Description</string>
+    <string name="third_home_desc1">VENUE : New Auditorium \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.1000\n2.\tOne Team per college\n3.\tMinimum number of participants per team is 10 and Maximum is 14. In addition there maybe one person incharge of music and one for lights\n4.\tStage time for each team is limited to maximum of 8+2 min. 2 min for stage setting is permitted\n5.\tOnly one round is allowed\n6.\tTeams will be judged on creativity, adherence to the theme, styling, choreography and music\n7.\tAny form of obscenity will result in debarring the team from further participation\n8.\tTheme: Theme of your Choice (Open theme)\n9.\t Prize:\n\t\t\t\t\t\t1st Prize: Rs.18,000\n\t\t\t\t\t\t2nd Prize: Rs.8,000</string>
+    <string name="third_home_desc2">VENUE : Ground \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.150 per team\n2.\tEach team will contain a maximum of 8 players (5 on field + 3 substitutes)\n3.\tGame Time: Approx. 15 min (7 min each half)\n4.\tA goalless match will result in a penalty shoot-out with 5-members taking one penalty each(One step penalty from the spot)\n5.\tOnly underarm throw allowed to goal keeper. If now followed 2 warnings will be given and the third will result in a penalty to the opposite team\n6.\tEvery out results in a kick in\n7.\tIf any player is given a red card, he will not be allowed to continue playing and team plays with a player short\n8.\tFailure to report on time results in a walkover to opposite team\m9.\tREFEREE\'S DECISION IS FINAL</string>
+    <string name="third_home_desc3">VENUE : New Block Side Entrance \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.300\n2.\tDuration is 10+2 min\n3.\tTeam can consist of 10+2 members\n4.\tPlay can be in English, Hindi or Kannada\n5.\tNo props allowed other than dupattas, head\wrist bands, kanjira\n6.\tNo pre-recorded music allowed\n7.\tGeneral rules of street play are applicable</string>
     <!--Time-->
     <string name="third_home_time1">Day-2 3.30 PM</string>
     <string name="third_home_time2">Day-1 12.00 PM</string>
@@ -176,7 +176,7 @@
     <string name="day2_desc8">VENUE : BT Seminar Hall (V Block) \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.100\n2.\tTwo Participants per team\n3.\tThe event consists of a preliminary round(written) and the team will be shortlisted for final round (oral)\n4.\tThe specific rules regarding the evaluation procedure, time to a give a particular answer an type of round will be informed before the commencement of the event\n5.\tQuestion will be based on general topics, technical, scientific, and current technologies</string>
     <string name="day2_desc9">VENUE : Marconi Seminar Hall (NB 2nd Floor) \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
     <string name="day2_desc10">VENUE : Science Seminar Hall (Science Block) \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
-    <string name="day2_desc11">VENUE : Civil Drawing Room \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.100\n2.\tDuration is 2 hours\n3.\tEvent will be conducted on spot on the given subject or idea\n4.\tParticipants will bring their own materials\n5.\tDrawing paper will be provided</string>
+    <stri0ng name="day2_desc11">VENUE : Civil Drawing Room \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.100\n2.\tDuration is 2 hours\n3.\tEvent will be conducted on spot on the given subject or idea\n4.\tParticipants will bring their own materials\n5.\tDrawing paper will be provided</stri0ng>
     <string name="day2_desc12">VENUE : Old Auditorium \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.300\n2.\tDuration is 12+3 min\n3.\tMaximum of 6 singers are allowed in a group with 4 accompanists\n4.\tTeam has to present 3 songs\n5.\tSong should be either in Kannada or Hindi\n6.\tEvaluation is based on singing only not on makeup, costumes or actions of the team\n7.\tKaraoke not allowed</string>
     <string name="day2_desc13">VENUE : Faraday Seminar Hall (EEE 2nd Floor) \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.100\n2.\tThree members per team\n3.\tNo lip-sync allowed\n4.\tReferring through colors, names, objects etc. are not allowed\n5.\tShould not break a word more than once\n6.\tMax. 3 min to guess the answer\n7.\tSpeaking and prompting will disqualify the team from the event</string>
     <string name="day2_desc14">VENUE : CS Seminar Hall \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
