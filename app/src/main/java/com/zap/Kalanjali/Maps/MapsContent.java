@@ -34,6 +34,14 @@ public class MapsContent {
     private static final LatLng LOCATION_ME_OFF = new LatLng(13.150605, 77.608432);
     private static final LatLng LOCATION_CB = new LatLng(13.150856, 77.608690);
     private static final LatLng LOCATION_CB_OFF = new LatLng(13.150857, 77.608722);
+    private static final LatLng LOCATION_MBA = new LatLng(13.151316, 77.609377);
+    private static final LatLng LOCATION_MBA_OFF = new LatLng(13.151317, 77.609409);
+    private static final LatLng LOCATION_DEN = new LatLng(13.149771, 77.608481);
+    private static final LatLng LOCATION_DEN_OFF = new LatLng(13.149772, 77.608513);
+    private static final LatLng LOCATION_WORK = new LatLng(13.151112, 77.607833);
+    private static final LatLng LOCATION_WORK_OFF = new LatLng(13.151113, 77.607865);
+    private static final LatLng LOCATION_GROUND = new LatLng(13.149730, 77.605473);
+    private static final LatLng LOCATION_GROUND_OFF = new LatLng(13.149731, 77.605505);
 
     /**
      * An array of sample (dummy) items.
@@ -52,6 +60,10 @@ public class MapsContent {
         addItem(new MapsItem(LOCATION_CA, R.string.title_canteen, LOCATION_CA_OFF));
         addItem(new MapsItem(LOCATION_ME, R.string.title_mech, LOCATION_ME_OFF));
         addItem(new MapsItem(LOCATION_CB, R.string.title_civil, LOCATION_CB_OFF));
+        addItem(new MapsItem(LOCATION_MBA, R.string.title_mba, LOCATION_MBA_OFF));
+        addItem(new MapsItem(LOCATION_DEN, R.string.title_den, LOCATION_DEN_OFF));
+        addItem(new MapsItem(LOCATION_WORK, R.string.title_work, LOCATION_WORK_OFF));
+        addItem(new MapsItem(LOCATION_GROUND, R.string.title_ground, LOCATION_GROUND_OFF));
     }
 
     private static void addItem(MapsItem item) {

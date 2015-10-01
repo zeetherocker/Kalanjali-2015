@@ -27,9 +27,9 @@
     <string name="first_home2">Indian Group Song</string>
     <string name="first_home3">Anthyakshari (Hindi, Kannada)</string>
     <!--Description-->
-    <string name="first_home_desc1">Music Event 1 Description</string>
-    <string name="first_home_desc2">Music Event 2 Description</string>
-    <string name="first_home_desc3">Music Event 3 Description</string>
+    <string name="first_home_desc1">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
+    <string name="first_home_desc2">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
+    <string name="first_home_desc3">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
     <!--Time-->
     <string name="first_home_time1">9.00 AM</string>
     <string name="first_home_time2">Day-2 10.30 AM</string>
@@ -42,9 +42,9 @@
     <string name="second_home2">Solo Classical Dance</string>
     <string name="second_home3">Solo Filmy Dance</string>
     <!--Description-->
-    <string name="second_home_desc1">Dance Event 1 Description</string>
-    <string name="second_home_desc2">Dance Event 2 Description</string>
-    <string name="second_home_desc3">Dance Event 3 Description</string>
+    <string name="second_home_desc1">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
+    <string name="second_home_desc2">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
+    <string name="second_home_desc3">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
     <!--Time-->
     <string name="second_home_time1">Day-2 2.00 PM</string>
     <string name="second_home_time2">Day-1 2.30 PM</string>
@@ -78,27 +78,37 @@
     <string name="day1_event9">Rangoli</string>
     <string name="day1_event10">Classical Dance (Solo)</string>
     <string name="day1_event11">Western Group Song</string>
-    <string name="day1_event12">JAM</string>
+    <string name="day1_event12">Just A Minute (JAM)</string>
     <string name="day1_event13">Street Play</string>
     <string name="day1_event14">Poetry Recitation (Eng,Kan,Hindi)</string>
     <string name="day1_event15">Collage</string>
+    <string name="day1_event16">LAN Games</string>
+    <string name="day1_event17">Coding and Debugging</string>
+    <string name="day1_event18">Gully Football</string>
+    <string name="day1_event19">Pro Kabadi</string>
+    <string name="day1_event20">Art Exhibition</string>
 
     <!-- Event Description -->
-    <string name="day1_desc1">Event 1 Description</string>
-    <string name="day1_desc2">Event 2 Description</string>
-    <string name="day1_desc3">Event 3 Description</string>
-    <string name="day1_desc4">Event 4 Description</string>
-    <string name="day1_desc5">Event 5 Description</string>
-    <string name="day1_desc6">Event 6 Description</string>
-    <string name="day1_desc7">Event 7 Description</string>
-    <string name="day1_desc8">Event 8 Description</string>
-    <string name="day1_desc9">Event 9 Description</string>
-    <string name="day1_desc10">Event 10 Description</string>
-    <string name="day1_desc11">Event 11 Description</string>
-    <string name="day1_desc12">Event 12 Description</string>
-    <string name="day1_desc13">Event 13 Description</string>
-    <string name="day1_desc14">Event 14 Description</string>
-    <string name="day1_desc15">Event 15 Description</string>
+    <string name="day1_desc1">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.100\n2.\tDuration is 5+2 min\n3.\tOnly filmy dance is allowed in this item\n4.\tRecorded music is allowed\n5.\tEvaluation will be based on technique, rhythm, abhinaya, costume, footwork and general impression</string>
+    <string name="day1_desc2">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.100\n2.\tDuration is 13+2 min\n3.\tItems can be hindustani or Carnatic Classical\n4.\tFilm songs are not allowed\n5.\tEvaluation is based on the qualities like Shruthi,Raaga,Composition and General Impression</string>
+    <string name="day1_desc3">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
+    <string name="day1_desc4">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
+    <string name="day1_desc5">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.100\n2.Duration is 5+2 min3.\tEvaluation is based on Composition, Rhythm, Coordination and General Impression\n4.\tParticipants shall bring their own instruments\n5.\tOnly 2 accompanists are allowed\n6.\tLanguage of the song shall only be English\n7.\tKaraoke not allowed</string>
+    <string name="day1_desc6">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.100\n2.\tIndividual Event\n3.\tTopic will be given on Day-1\n4.\tCamera with resolution 8MP and above is to be used\n5.\tMobile Phone Cameras are not allowed\n6.\tPhotographs should be taken within the campus only\n7.\tA maximum of 5 best photos to be submitted</string>
+    <string name="day1_desc7">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
+    <string name="day1_desc8">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.100\n2.\tDuration is 4+1 min\n3.\tParticipants can speak \'for\' or \'against\' the topic\n4.\tMedium of expression will be English, Kannada or Hindi\n5.\tPaper reading is not allowed\n6.\tTopic for the competition will be announced 24 hours prior to the start of the program(For topic confirmation contact student convenor)</string>
+    <string name="day1_desc9">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.100\n2.\tDuration is 2 hours\n3.\tParticipants will bring their own materials. The art is known differently in different regions such as Mandna, Alpana, Alekhan, Rangoli etc.\n4.\tFor this, the medium and form of expression can be free hand, pictorial or descriptive\n5.\tOnly one medium shall be used: Color Powder or flower petals or saw dust or rice without pasting\n6.\tThe participants will have to prepare a rangoli within the space provided by the organizers\n7.\tTwo Participants per Team</string>
+    <string name="day1_desc10">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.100\n2.\tDuration is 8+4 min\n3.\tThe classical dance can be from any of the approved forms such as Kathak, Kathakkali, Bharathanatyam, Manipuri, Kuchipudi, Mohiniyattam, Odissi, etc.\n4.\tRecorded Music is allowed\n5.\tEvaluation will be based on technique, rhythm, abhinaya, costume, footwork and general impression</string>
+    <string name="day1_desc11">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
+    <string name="day1_desc12">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.100\n2.\tDuration is 1 min\n3.\tParticipants will be given a topic on spot\n4.\tGrammatical errors, unnecessary pause, jumbled words will be considered as errors and participants who point out any of these will be given a chance to speak next</string>
+    <string name="day1_desc13">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.300\n2.\tDuration is 10+2 min\n3.\tTeam can consist of 10+2 members\n4.\tPlay can be in English, Hindi or Kannada\n5.\tNo props allowed other than dupattas, head\wrist bands, kanjira\n6.\tNo pre-recorded music allowed\n7.\tGeneral rules of street play are applicable</string>
+    <string name="day1_desc14">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.100\n2.\tDuration is 4+1 min\n3.\tTopic will be given 30 min before the start of the event\n4.\tLanguage can be English, Hindi, or Kannada\n5.\tThe Participants would be required to submit the content of the poem in writing to the organizers at the time of recitation</string>
+    <string name="day1_desc15">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.100\n2.\tDuration is 2 hours\n3.\tEvent will be conducted on spot on the given topic or subject\n4.\tThe collge will provide the Drawing paper\n5.\tParticipants will bring thier pasting and other materials required for the contest\n6.\tA collage has to be prepared from old magazines or news papers\n7.\tTeam can have 2+1 participants</string>
+    <string name="day1_desc16">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
+    <string name="day1_desc17">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.100\n2.\tTwo Participants per team\n3.\tCoding Languages to be C or C++\n4.\tTwo rounds - \n\t\t\t\t\t\tFirst round : Prelims (written)Participants have to code a program in C++ on paper\n\t\t\t\t\t\tFinals: selected participants to code on the computer\n5.\tAny kind of malpractice will result in disqualification of the team\n6.\tThere is no limit to the number of participants from a particular college; However registrations will close at 1PM on the day of the event</string>
+    <string name="day1_desc18">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.150 per team\n2.\tEach team will contain a maximum of 8 players (5 on field + 3 substitutes)\n3.\tGame Time: Approx. 15 min (7 min each half)\n4.\tA goalless match will result in a penalty shoot-out with 5-members taking one penalty each(One step penalty from the spot)\n5.\tOnly underarm throw allowed to goal keeper. If now followed 2 warnings will be given and the third will result in a penalty to the opposite team\n6.\tEvery out results in a kick in\n7.\tIf any player is given a red card, he will not be allowed to continue playing and team plays with a player short\n8.\tFailure to report on time results in a walkover to opposite team\m9.\tREFEREE'S DECISION IS FINAL</string>
+    <string name="day1_desc19">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
+    <string name="day1_desc20">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
 
     <!-- Time -->
     <string name="day1_time1">12.00 PM - 2.00 PM</string>
@@ -116,6 +126,11 @@
     <string name="day1_time13">2.00 PM - 4.00 PM</string>
     <string name="day1_time14">2.00 PM - 4.00 PM</string>
     <string name="day1_time15">2.00 PM - 4.00 PM</string>
+    <string name="day1_time16">12.00 PM - 4.00 PM</string>
+    <string name="day1_time17">12.00 PM - 4.00 PM</string>
+    <string name="day1_time18">12.00 PM - 4.00 PM</string>
+    <string name="day1_time19">12.00 PM - 4.00 PM</string>
+    <string name="day1_time20">12.00 PM - 4.00 PM</string>
 
     <!-- DAY 2 Events -->
 
@@ -142,26 +157,26 @@
     <string name="day2_event20">Fashion Show</string>
 
     <!-- Event Description -->
-    <string name="day2_desc1">Event 1 Description</string>
-    <string name="day2_desc2">Event 2 Description</string>
-    <string name="day2_desc3">Event 3 Description</string>
-    <string name="day2_desc4">Event 4 Description</string>
-    <string name="day2_desc5">Event 5 Description</string>
+    <string name="day2_desc1">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
+    <string name="day2_desc2">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
+    <string name="day2_desc3">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
+    <string name="day2_desc4">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
+    <string name="day2_desc5">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
     <string name="day2_desc6">Event 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\nEvent 6 Description\n</string>
-    <string name="day2_desc7">Event 7 Description</string>
-    <string name="day2_desc8">Event 8 Description</string>
-    <string name="day2_desc9">Event 9 Description</string>
-    <string name="day2_desc10">Event 10 Description</string>
-    <string name="day2_desc11">Event 11 Description</string>
-    <string name="day2_desc12">Event 12 Description</string>
-    <string name="day2_desc13">Event 13 Description</string>
-    <string name="day2_desc14">Event 14 Description</string>
-    <string name="day2_desc15">Event 15 Description</string>
-    <string name="day2_desc16">Event 16 Description</string>
-    <string name="day2_desc17">Event 17 Description</string>
-    <string name="day2_desc18">Event 18 Description</string>
-    <string name="day2_desc19">Event 19 Description</string>
-    <string name="day2_desc20">Event 20 Description</string>
+    <string name="day2_desc7">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
+    <string name="day2_desc8">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
+    <string name="day2_desc9">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
+    <string name="day2_desc10">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
+    <string name="day2_desc11">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
+    <string name="day2_desc12">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
+    <string name="day2_desc13">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
+    <string name="day2_desc14">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
+    <string name="day2_desc15">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
+    <string name="day2_desc16">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
+    <string name="day2_desc17">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
+    <string name="day2_desc18">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
+    <string name="day2_desc19">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
+    <string name="day2_desc20">VENUE : \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
 
     <!-- Time -->
     <string name="day2_time1">9.30 AM - 10.30 AM</string>
@@ -197,5 +212,9 @@
     <string name="title_mech">Mechanical Block</string>
     <string name="title_civil">Civil and EEE Block</string>
     <string name="title_library">Library</string>
+    <string name="title_mba">MBA Block</string>
+    <string name="title_den">Dental Block</string>
+    <string name="title_work">Workshop</string>
+    <string name="title_ground">Ground</string>
 
 </resources>

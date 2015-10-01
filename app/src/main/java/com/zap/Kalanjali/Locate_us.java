@@ -39,6 +39,10 @@ public class Locate_us extends ActionBarActivity {
     private static final LatLng LOCATION_CA = new LatLng(13.149867, 77.610226);
     private static final LatLng LOCATION_ME = new LatLng(13.150604, 77.608400);
     private static final LatLng LOCATION_CB = new LatLng(13.150856, 77.608690);
+    private static final LatLng LOCATION_MBA = new LatLng(13.151316, 77.609377);
+    private static final LatLng LOCATION_DEN = new LatLng(13.149771, 77.608481);
+    private static final LatLng LOCATION_WORK = new LatLng(13.151112, 77.607833);
+    private static final LatLng LOCATION_GROUND = new LatLng(13.149730, 77.605473);
 
     private LatLng curLatlng;
 
@@ -155,10 +159,22 @@ public class Locate_us extends ActionBarActivity {
                     curLatlng = LOCATION_CB;
                     break;
                 case 5:
-                    curLatlng = LOCATION_ME;
+                    curLatlng = LOCATION_PL;
                     break;
                 case 6:
                     curLatlng = LOCATION_SCIENCE;
+                    break;
+                case 7:
+                    curLatlng = LOCATION_MBA;
+                    break;
+                case 8:
+                    curLatlng = LOCATION_DEN;
+                    break;
+                case 9:
+                    curLatlng = LOCATION_WORK;
+                    break;
+                case 10:
+                    curLatlng = LOCATION_GROUND;
                     break;
             }
             return new CameraPosition.Builder().bearing(LOCATION_ANGLE).target(curLatlng).zoom(LOCATION_ZOOM_EVENT).tilt(LOCATION_TILT).build();
