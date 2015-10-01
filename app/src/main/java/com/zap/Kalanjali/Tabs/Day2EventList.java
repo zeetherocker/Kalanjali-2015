@@ -33,8 +33,8 @@ public class Day2EventList extends Fragment {
     List<EventItem> dataCurrent = getData();
     private View myView;
 
-    public static Day1EventList newInstance() {
-        Day1EventList fragment = new Day1EventList();
+    public static Day2EventList newInstance() {
+        Day2EventList fragment = new Day2EventList();
         return fragment;
     }
 

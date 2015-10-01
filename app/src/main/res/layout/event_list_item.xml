@@ -23,14 +23,13 @@
         android:id="@+id/card_item"
         android:layout_toRightOf="@id/card_image"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="60dp"
         android:text="Name"
         android:gravity="top"
         android:textSize="18sp"
         android:textColor="#000"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="25dp"
-        android:layout_alignBottom="@+id/card_image"
         android:focusableInTouchMode="true"/>
 
     <TextView
@@ -42,13 +41,7 @@
         android:layout_centerVertical="true"
         android:focusable="false"
         android:layout_alignStart="@+id/card_item"
-        android:textSize="13sp"/>
-
-    <View
-        android:layout_below="@id/card_image"
-        android:layout_width="match_parent"
-        android:layout_height="5dp">
-
-    </View>
+        android:textSize="13sp"
+        android:layout_alignBottom="@+id/card_item"/>
 
 </RelativeLayout>

@@ -5,6 +5,8 @@ import android.animation.Animator;
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.content.Intent;
+import android.graphics.drawable.ShapeDrawable;
+import android.graphics.drawable.shapes.OvalShape;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -22,8 +24,10 @@ import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.getbase.floatingactionbutton.FloatingActionButton;
+import com.getbase.floatingactionbutton.FloatingActionsMenu;
 import com.github.ksoichiro.android.observablescrollview.ObservableScrollViewCallbacks;
 import com.github.ksoichiro.android.observablescrollview.ScrollState;
 import com.nineoldandroids.view.ViewHelper;
@@ -141,6 +145,35 @@ public class EventActivity extends AppCompatActivity implements ObservableScroll
     }
 
     public void getFloatingActionButton() {
+
+        FloatingActionsMenu button = (FloatingActionsMenu) findViewById(R.id.multiple_actions);
+        ShapeDrawable drawable = new ShapeDrawable(new OvalShape());
+        drawable.getPaint().setColor(getResources().getColor(R.color.white));
+
+        final FloatingActionButton actionA = (FloatingActionButton) findViewById(R.id.action_a);
+        actionA.setIcon(R.drawable.ic_map_button);
+        actionA.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(EventActivity.this, Locate_us.class);
+                Bundle b = new Bundle();
+                b.putInt("cameraPos", eventLocationId);
+                intent.putExtras(b);
+                startActivity(intent);
+            }
+        });
+
+        final FloatingActionButton actionB = (FloatingActionButton) findViewById(R.id.action_b);
+        actionB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(EventActivity.this, "Working on it", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        if (arg == MAIN_ARG){
+            button.setVisibility(View.GONE);
+        }
 
     }
 
@@ -379,7 +412,7 @@ public class EventActivity extends AppCompatActivity implements ObservableScroll
             adjustedScrollY = mParallaxImageHeight;
         }
 
-        float maxScale = 1.6f;
+        float maxScale = 0.1f;
         float scale = maxScale * ((float) (mParallaxImageHeight - mToolbarHeight) - adjustedScrollY) / (mParallaxImageHeight - mToolbarHeight);
         if (scale < 0) {
             scale = 0;
@@ -390,7 +423,7 @@ public class EventActivity extends AppCompatActivity implements ObservableScroll
         ViewHelper.setScaleX(mTitle, 1 + scale);
         ViewHelper.setScaleY(mTitle, 1 + scale);
 
-        int maxTitleTranslation = (int) (mParallaxImageHeight * 0.4f);
+        int maxTitleTranslation = (int) (mParallaxImageHeight * 0.75f);
         int titleTranslation = (int) (maxTitleTranslation * ((float) scale / maxScale));
         ViewHelper.setTranslationY(mTitle, titleTranslation);
     }

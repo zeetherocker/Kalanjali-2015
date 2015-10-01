@@ -40,7 +40,7 @@
         android:layout_width="wrap_content"
         android:layout_height="32dp"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="30th - 31th Oct "
+        android:text="15th - 16th Oct "
         android:layout_gravity="bottom"
         android:layout_marginStart="22dp"
         android:fontFamily="sans-serif-medium"
