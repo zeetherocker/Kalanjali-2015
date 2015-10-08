@@ -5,6 +5,7 @@
     <dimen name="tool_bar_top_padding">24dp</dimen>
     <dimen name="headerbar_elevation">4dp</dimen>
     <dimen name="session_detail_max_header_elevation">@dimen/headerbar_elevation</dimen>
+    <dimen name="main_event_image_height">350dp</dimen>
 
 
     <!-- Action Bar auto-hide-on-scroll behavior parameters -->

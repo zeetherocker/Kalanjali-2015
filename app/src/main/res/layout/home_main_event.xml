@@ -12,7 +12,7 @@
     <ImageView
         android:id="@+id/main_event_image"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/main_event_image_height"
         android:src="@drawable/ic_main_event"
         android:foregroundGravity="top"
         android:layout_gravity="top"

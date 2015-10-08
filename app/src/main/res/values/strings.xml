@@ -27,7 +27,7 @@
     <string name="first_home2">Indian Group Song</string>
     <string name="first_home3">Western Vocal (Solo)</string>
     <!--Description-->
-    <string name="first_home_desc1">VENUE : Old Auditorium \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.</string>
+    <string name="first_home_desc1">VENUE : Old Auditorium \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.\n2.\tDuration is 6+4 min\n3.\tOnly English songs allowed\n4.\tFour singers + Five accompanists are allowed\n5.\tParticipants need to bring their own instruments</string>
     <string name="first_home_desc2">VENUE : Old Auditorium \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.300\n2.\tDuration is 12+3 min\n3.\tMaximum of 6 singers are allowed in a group with 4 accompanists\n4.\tTeam has to present 3 songs\n5.\tSong should be either in Kannada or Hindi\n6.\tEvaluation is based on singing only not on makeup, costumes or actions of the team\n7.\tKaraoke not allowed</string>
     <string name="first_home_desc3">VENUE : CS Seminar Hall \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.100\n2.Duration is 5+2 min3.\tEvaluation is based on Composition, Rhythm, Coordination and General Impression\n4.\tParticipants shall bring their own instruments\n5.\tOnly 2 accompanists are allowed\n6.\tLanguage of the song shall only be English\n7.\tKaraoke not allowed</string>
     <!--Time-->
@@ -225,5 +225,8 @@
     <string name="title_den">Dental Block</string>
     <string name="title_work">Workshop</string>
     <string name="title_ground">Ground</string>
+
+    <!--Contact Details-->
+
 
 </resources>

@@ -153,7 +153,7 @@ public class MainActivity extends ActionBarActivity {
 
         switch (position) {
             case 0:
-                myFragment = new ProfileDetails();
+                myFragment = new HomeActivity();
                 break;
             case 1:
                 myFragment = new HomeActivity();
