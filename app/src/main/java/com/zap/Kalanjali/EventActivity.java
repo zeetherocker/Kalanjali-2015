@@ -241,43 +241,6 @@ public class EventActivity extends AppCompatActivity implements ObservableScroll
         setBackgroundAlpha(mToolbarView, 0.0f, mToolbarBackgroundColor);
     }
 
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        if (arg == MAIN_ARG)
-            getMenuInflater().inflate(R.menu.menu_main, menu);
-        else
-            getMenuInflater().inflate(R.menu.menu_event, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            startActivity(new Intent(this, SettingsActivity.class));
-            return true;
-        }
-
-        if (id == R.id.action_maps) {
-            Intent intent = new Intent(this, Locate_us.class);
-            Bundle b = new Bundle();
-            b.putInt("cameraPos", eventLocationId);
-            intent.putExtras(b);
-            startActivity(intent);
-            return true;
-
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
     @Override
     public void onScrollChanged(int scrollY, boolean firstScroll, boolean dragging) {
         //Store actual scroll state:

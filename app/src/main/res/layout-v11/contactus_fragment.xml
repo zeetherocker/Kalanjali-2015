@@ -2,12 +2,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.zap.Kalanjali.Tabs.Day2EventList">
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ExpandableListView
+        android:id="@+id/contact_us_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Second Tab" />
+        android:indicatorRight="?android:attr/expandableListPreferredChildIndicatorRight" />
 
 </FrameLayout>

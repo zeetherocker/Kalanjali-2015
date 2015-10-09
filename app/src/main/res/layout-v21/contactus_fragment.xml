@@ -3,14 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingTop="10dp"
-    android:paddingBottom="10dp"
-    tools:context="com.zap.Kalanjali.FirstFragment">
+    android:paddingBottom="10dp">
 
     <ExpandableListView
         android:id="@+id/contact_us_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:groupIndicator="@null"
         android:indicatorRight="?android:attr/expandableListPreferredChildIndicatorRight" />
 
 </FrameLayout>

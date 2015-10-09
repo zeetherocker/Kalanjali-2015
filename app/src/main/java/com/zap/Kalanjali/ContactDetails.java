@@ -66,58 +66,58 @@ public class ContactDetails extends Fragment {
 
         // Adding child data
         List<String> coords = new ArrayList<String>();
-        coords.add("Rakesh Nayaka");
-        coords.add("Surabhi Suresh");
+        coords.add("Rakesh Nayaka                 7406441190");
+        coords.add("Surabhi Suresh                 9886943629");
 
         List<String> cocoords = new ArrayList<String>();
-        cocoords.add("Vyshnavi Acharya");
-        cocoords.add("Subbramanya Adiga");
-        cocoords.add("Aditya Kashyap");
+        cocoords.add("Vyshnavi Acharya              9902085109");
+        cocoords.add("Subbramanya Adiga             9535483934");
+        cocoords.add("Aditya Kashyap                ");
 
         List<String> event = new ArrayList<String>();
-        event.add("Mahima Fernandes");
-        event.add("Shwetha Bolumbu");
-        event.add("Yashas Bysani");
+        event.add("Mahima Fernandes              8722376145");
+        event.add("Shwetha Bolumbu               9591346244");
+        event.add("Yashas Bysani                 9439979695");
 
         List<String> lit = new ArrayList<String>();
-        lit.add("Anand Shekar");
-        lit.add("Jovil");
-        lit.add("Muditha Gosh");
+        lit.add("Anand Shekar                  ");
+        lit.add("Jovil                         ");
+        lit.add("Muditha Gosh                  ");
 
         List<String> dance = new ArrayList<String>();
-        dance.add("Jofin George");
-        dance.add("Shreya Acharya");
+        dance.add("Jofin George                  ");
+        dance.add("Shreya Acharya                ");
 
         List<String> music = new ArrayList<String>();
-        music.add("Swastik Nandkumar");
-        music.add("Raghuveer C");
-        music.add("Anupama VS");
-        music.add("Gokul");
+        music.add("Swastik Nandkumar             ");
+        music.add("Raghuveer C                   ");
+        music.add("Anupama VS                    ");
+        music.add("Gokul                         ");
 
         List<String> fine = new ArrayList<String>();
-        fine.add("Khushbu Agarwal");
-        fine.add("Avi Shekar");
+        fine.add("Khushbu Agarwal               ");
+        fine.add("Avi Shekar                    ");
 
         List<String> photo = new ArrayList<String>();
-        photo.add("Abhishek Chintamani");
+        photo.add("Abhishek Chintamani                9595959595");
 
         List<String> drama = new ArrayList<String>();
-        drama.add("Parikshith");
+        drama.add("Parikshith                    ");
 
         List<String> tech = new ArrayList<String>();
-        tech.add("Vaithee");
-        tech.add("Harinder");
-        tech.add("Shubam Singh");
+        tech.add("Vaithee                       ");
+        tech.add("Harinder                      ");
+        tech.add("Shubam Singh                  ");
 
         List<String> pub = new ArrayList<String>();
-        pub.add("Namrath Hebbar");
-        pub.add("Pramodh M");
-        pub.add("Joane Kripa");
+        pub.add("Namrath Hebbar                ");
+        pub.add("Pramodh M                     ");
+        pub.add("Joane Kripa                   ");
 
         List<String> spons = new ArrayList<String>();
-        spons.add("Kushal");
-        spons.add("Yashas");
-        spons.add("Roshni");
+        spons.add("Kushal                        ");
+        spons.add("Yashas                        ");
+        spons.add("Roshni                        ");
 
         listDataChild.put(listDataHeader.get(0), coords); // Header, Child data
         listDataChild.put(listDataHeader.get(1), cocoords);

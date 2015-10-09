@@ -37,7 +37,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/parallax_image_height"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/ic_main_event" />
+                        android:src="@drawable/ic_main_event1" />
 
                     <LinearLayout
                         android:id="@+id/ll_above_photo"
