@@ -1,6 +1,8 @@
 package com.zap.Kalanjali;
 
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -8,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ExpandableListView;
+import android.widget.ImageView;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -25,6 +28,9 @@ public class ContactDetails extends Fragment {
     List<String> listDataHeader;
     HashMap<String, List<String>> listDataChild;
 
+    ImageView fb;
+    ImageView browser;
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -32,11 +38,36 @@ public class ContactDetails extends Fragment {
 
         // get the listview
         expListView = (ExpandableListView) myView.findViewById(R.id.contact_us_list);
+        expListView.clearFocus();
+        expListView.setFocusable(false);
 
         // preparing list data
         prepareListData();
 
         listAdapter = new ExpandableListAdapter(getActivity(), listDataHeader, listDataChild);
+
+        fb = (ImageView) myView.findViewById(R.id.img_fb);
+        browser = (ImageView) myView.findViewById(R.id.img_browser);
+
+        fb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String url = "https://www.facebook.com/Kalanjali2015";
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
+            }
+        });
+
+        browser.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String url = "http://sirmvitkalanjali.in/index.html";
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
+            }
+        });
 
         // setting list adapter
         expListView.setAdapter(listAdapter);
@@ -72,7 +103,7 @@ public class ContactDetails extends Fragment {
         List<String> cocoords = new ArrayList<String>();
         cocoords.add("Vyshnavi Acharya              9902085109");
         cocoords.add("Subbramanya Adiga             9535483934");
-        cocoords.add("Aditya Kashyap                ");
+        cocoords.add("Aditya Kashyap                9740640725");
 
         List<String> event = new ArrayList<String>();
         event.add("Mahima Fernandes              8722376145");
@@ -80,44 +111,44 @@ public class ContactDetails extends Fragment {
         event.add("Yashas Bysani                 9439979695");
 
         List<String> lit = new ArrayList<String>();
-        lit.add("Anand Shekar                  ");
-        lit.add("Jovil                         ");
-        lit.add("Muditha Gosh                  ");
+        lit.add("Anand Shekar                  8884502660");
+        lit.add("Jovil                         7406702079");
+        lit.add("Muditha Gosh                  8792236573");
 
         List<String> dance = new ArrayList<String>();
-        dance.add("Jofin George                  ");
-        dance.add("Shreya Acharya                ");
+        dance.add("Jofin George                  8197265160");
+        dance.add("Shreya Acharya                8971269757");
 
         List<String> music = new ArrayList<String>();
-        music.add("Swastik Nandkumar             ");
-        music.add("Raghuveer C                   ");
-        music.add("Anupama VS                    ");
-        music.add("Gokul                         ");
+        music.add("Swastik Nandkumar             8123214006");
+        music.add("Raghuveer C                   9480635524");
+        music.add("Anupama VS                    9036446095");
+        music.add("Gokul                         8050510824");
 
         List<String> fine = new ArrayList<String>();
-        fine.add("Khushbu Agarwal               ");
-        fine.add("Avi Shekar                    ");
+        fine.add("Khushbu Agarwal               8951582705");
+        fine.add("Avi Shekar                    9632642969");
 
         List<String> photo = new ArrayList<String>();
         photo.add("Abhishek Chintamani                9595959595");
 
         List<String> drama = new ArrayList<String>();
-        drama.add("Parikshith                    ");
+        drama.add("Parikshith                    9481015014");
 
         List<String> tech = new ArrayList<String>();
-        tech.add("Vaithee                       ");
-        tech.add("Harinder                      ");
-        tech.add("Shubam Singh                  ");
+        tech.add("Vaithee                       9060359435");
+        tech.add("Harinder                      7795260469");
+        tech.add("Shubam Singh                  7795196871");
 
         List<String> pub = new ArrayList<String>();
-        pub.add("Namrath Hebbar                ");
-        pub.add("Pramodh M                     ");
-        pub.add("Joane Kripa                   ");
+        pub.add("Namrath Hebbar                9844005697");
+        pub.add("Pramodh M                     9742622478");
+        pub.add("Joane Kripa                   9740167271");
 
         List<String> spons = new ArrayList<String>();
-        spons.add("Kushal                        ");
-        spons.add("Yashas                        ");
-        spons.add("Roshni                        ");
+        spons.add("Kushal                        9739859668");
+        spons.add("Yashas                        9739979695");
+        spons.add("Roshni                        9731524574");
 
         listDataChild.put(listDataHeader.get(0), coords); // Header, Child data
         listDataChild.put(listDataHeader.get(1), cocoords);

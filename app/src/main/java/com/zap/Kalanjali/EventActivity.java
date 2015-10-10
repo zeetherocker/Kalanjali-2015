@@ -7,11 +7,13 @@ import android.animation.ObjectAnimator;
 import android.content.Intent;
 import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.OvalShape;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.TypedValue;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -78,6 +80,7 @@ public class EventActivity extends AppCompatActivity implements ObservableScroll
     private View mTextView;
     private int rootheight;
     private int textheight;
+    private ImageView image;
 
     int ItemPos = 0;
     int string = 1;
@@ -104,6 +107,7 @@ public class EventActivity extends AppCompatActivity implements ObservableScroll
         llTintLayer = (LinearLayout) findViewById(R.id.ll_above_photo);
         flImage = (FrameLayout) findViewById(R.id.fl_image);
         mextraView = findViewById(R.id.extra_view);
+        image = (ImageView) findViewById(R.id.image);
 
         Bundle b = getIntent().getExtras();
         arg = b.getInt("arg");
@@ -115,7 +119,9 @@ public class EventActivity extends AppCompatActivity implements ObservableScroll
             case MAIN_ARG:
                 mTitle.setText(getString(string));
                 mEventDesc.setText(getString(string1));
+                image.setImageDrawable(getResources().getDrawable(R.drawable.ic_main_event));
                 mextraView.setMinimumHeight((int) getResources().getDimension(R.dimen.extra_view_height));
+                mEventDesc.setTextAlignment(mEventDesc.TEXT_ALIGNMENT_CENTER);
                 break;
 
             case HOME_ARG :
@@ -172,7 +178,11 @@ public class EventActivity extends AppCompatActivity implements ObservableScroll
         actionB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(EventActivity.this, "Working on it", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(EventActivity.this, "Working on it", Toast.LENGTH_SHORT).show();
+                String url = "http://sirmvitkalanjali.in/register.html";
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
             }
         });
 

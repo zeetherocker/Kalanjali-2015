@@ -9,15 +9,14 @@
     android:background="@drawable/background"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <ImageView
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_card1"
+        android:layout_marginLeft="16dp"
         android:id="@+id/card_image"
-        android:layout_width="90dp"
-        android:layout_height="80dp"
-        android:layout_marginLeft="20dp"
-        android:background="@drawable/ic_card1"
-        android:scaleType="centerCrop"
-        android:focusable="false"
-        android:layout_centerVertical="true" />
+        android:layout_marginTop="10dp"/>
 
     <TextView
         android:id="@+id/card_item"
@@ -26,9 +25,9 @@
         android:layout_height="60dp"
         android:text="Name"
         android:gravity="top"
-        android:textSize="18sp"
+        android:textSize="16dp"
         android:textColor="#000"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="13dp"
         android:layout_marginLeft="25dp"
         android:focusableInTouchMode="true"/>
 
@@ -41,7 +40,7 @@
         android:layout_centerVertical="true"
         android:focusable="false"
         android:layout_alignStart="@+id/card_item"
-        android:textSize="13sp"
+        android:textSize="11dp"
         android:layout_alignBottom="@+id/card_item"/>
 
 </RelativeLayout>

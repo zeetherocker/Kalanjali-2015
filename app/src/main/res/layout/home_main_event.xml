@@ -30,6 +30,7 @@
         android:layout_marginStart="20dp"
         android:layout_gravity="bottom"
         android:gravity="top"
+        android:textSize="19dp"
         android:fontFamily="sans-serif-medium"
         android:textStyle="normal"
         android:focusable="true"/>
@@ -46,7 +47,7 @@
         android:layout_marginStart="22dp"
         android:fontFamily="sans-serif-medium"
         android:textStyle="normal"
-        android:textSize="14sp"
+        android:textSize="14dp"
         android:focusable="true"/>
 
 

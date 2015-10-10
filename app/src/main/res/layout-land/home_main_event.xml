@@ -44,7 +44,7 @@
         android:layout_marginStart="327dp"
         android:fontFamily="sans-serif-medium"
         android:textStyle="normal"
-        android:textSize="14sp"
+        android:textSize="14dp"
         android:focusable="true"
         android:layout_below="@+id/main_event_text"
         android:layout_marginTop="55dp"/>

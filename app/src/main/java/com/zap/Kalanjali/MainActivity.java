@@ -24,15 +24,15 @@ public class MainActivity extends ActionBarActivity {
     //First We Declare Titles And Icons For Our Navigation Drawer List View
     //This Icons And Titles Are holded in an Array as you can see
 
-    String TITLES[] = {"Home","Events","Locate us","Contact"};
-    int ICONS[] = {R.drawable.ic_home,R.drawable.ic_events,R.drawable.ic_maps,R.drawable.ic_mail};
+    String TITLES[] = {"Home","Events","Locate us","Contact","About"};
+    int ICONS[] = {R.drawable.ic_home,R.drawable.ic_events,R.drawable.ic_maps,R.drawable.ic_mail,R.drawable.ic_mail};
 
     //Similarly we Create a String Resource for the name and email in the header view
     //And we also create a int resource for profile picture in the header view
 
     String NAME = "Kalanjali 2015";
     String EMAIL = "kalanjali@mvit.com";
-    int PROFILE = R.drawable.aka;
+    int PROFILE = R.drawable.ic_aka;
     int position = 1;
 
     private Toolbar toolbar;                              // Declaring the Toolbar Object
@@ -153,13 +153,16 @@ public class MainActivity extends ActionBarActivity {
 
         switch (position) {
             case 0:
-                myFragment = new HomeActivity();
+                myFragment = new About();
                 break;
             case 1:
                 myFragment = new HomeActivity();
                 break;
             case 4:
                 myFragment = new ContactDetails();
+                break;
+            case 5:
+                myFragment = new About();
                 break;
 
         }

@@ -1,14 +1,81 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="10dp"
-    android:paddingBottom="10dp">
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
 
-    <ExpandableListView
-        android:id="@+id/contact_us_list"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:indicatorRight="?android:attr/expandableListPreferredChildIndicatorRight" />
+        android:layout_height="match_parent">
 
-</FrameLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:elevation="6dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/social"
+                    android:textColor="#000"
+                    android:textSize="20dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="37dp"
+                    android:background="@color/black_semi_transparent" />
+
+                <ImageView
+                    android:id="@+id/img_fb"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/ic_facebook" />
+
+                <ImageView
+                    android:id="@+id/img_browser"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/ic_browser" />
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/details"
+                android:textColor="#000"
+                android:textSize="20dp" />
+
+            <ExpandableListView
+                android:id="@+id/contact_us_list"
+                android:layout_width="match_parent"
+                android:layout_height="800dp"
+                android:layout_below="@+id/txt"
+                android:layout_marginTop="20dp"
+                android:indicatorRight="?android:attr/expandableListPreferredChildIndicatorRight" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

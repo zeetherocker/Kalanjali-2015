@@ -6,6 +6,8 @@
     android:orientation="vertical">
 
     <TextView
+        android:clickable="true"
+        android:background="@drawable/background"
         android:id="@+id/lblListItem"
         android:layout_width="match_parent"
         android:layout_height="50dp"
