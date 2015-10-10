@@ -106,7 +106,6 @@ public class EventActivity extends AppCompatActivity implements ObservableScroll
         mToolbarView = (Toolbar) findViewById(R.id.toolbar_view);
         llTintLayer = (LinearLayout) findViewById(R.id.ll_above_photo);
         flImage = (FrameLayout) findViewById(R.id.fl_image);
-        mextraView = findViewById(R.id.extra_view);
         image = (ImageView) findViewById(R.id.image);
 
         Bundle b = getIntent().getExtras();
@@ -120,7 +119,6 @@ public class EventActivity extends AppCompatActivity implements ObservableScroll
                 mTitle.setText(getString(string));
                 mEventDesc.setText(getString(string1));
                 image.setImageDrawable(getResources().getDrawable(R.drawable.ic_main_event));
-                mextraView.setMinimumHeight((int) getResources().getDimension(R.dimen.extra_view_height));
                 mEventDesc.setTextAlignment(mEventDesc.TEXT_ALIGNMENT_CENTER);
                 break;
 

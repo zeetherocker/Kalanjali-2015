@@ -87,12 +87,6 @@
                             android:paddingRight="16dp"
                             android:paddingTop="16dp" />
                     </android.support.v7.widget.CardView>
-                    <View
-                        android:id="@+id/extra_view"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-
-                    </View>
 
                 </LinearLayout>
 
