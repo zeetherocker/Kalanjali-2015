@@ -68,12 +68,6 @@
         <item>5.00 PM</item>
     </string-array>
 
-    <integer-array name="icon_array">
-        <item>@drawable/ic_card1</item>
-        <item>@drawable/ic_card2</item>
-        <item>@drawable/ic_card3</item>
-    </integer-array>
-
     <!-- Day 1 List -->
 
     <string-array name="day1_titles">
