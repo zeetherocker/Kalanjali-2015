@@ -25,7 +25,7 @@ public class MainActivity extends ActionBarActivity {
     //This Icons And Titles Are holded in an Array as you can see
 
     String TITLES[] = {"Home","Events","Locate us","Contact","About"};
-    int ICONS[] = {R.drawable.ic_home,R.drawable.ic_events,R.drawable.ic_maps,R.drawable.ic_mail,R.drawable.ic_mail};
+    int ICONS[] = {R.drawable.ic_home,R.drawable.ic_events,R.drawable.ic_maps,R.drawable.ic_mail,R.drawable.ic_about};
 
     //Similarly we Create a String Resource for the name and email in the header view
     //And we also create a int resource for profile picture in the header view
