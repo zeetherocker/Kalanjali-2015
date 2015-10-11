@@ -177,7 +177,7 @@ public class EventActivity extends AppCompatActivity implements ObservableScroll
             @Override
             public void onClick(View view) {
                 //Toast.makeText(EventActivity.this, "Working on it", Toast.LENGTH_SHORT).show();
-                String url = "http://sirmvitkalanjali.in/register.html";
+                String url = "http://sirmvitkalanjali.in/gp.php";
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));
                 startActivity(i);

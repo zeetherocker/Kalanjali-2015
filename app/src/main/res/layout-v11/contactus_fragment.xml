@@ -69,7 +69,7 @@
             <ExpandableListView
                 android:id="@+id/contact_us_list"
                 android:layout_width="match_parent"
-                android:layout_height="800dp"
+                android:layout_height="1000dp"
                 android:layout_below="@+id/txt"
                 android:layout_marginTop="20dp"
                 android:indicatorRight="?android:attr/expandableListPreferredChildIndicatorRight" />

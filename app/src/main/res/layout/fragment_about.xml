@@ -4,90 +4,105 @@
     android:layout_height="match_parent"
     tools:context="com.zap.Kalanjali.About">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="195dp"
-        android:background="@drawable/ic_coll" />
-
-    <android.support.v7.widget.CardView
-        android:elevation="10dp"
-        android:layout_marginLeft="2dp"
-        android:layout_marginRight="2dp"
-        android:layout_marginTop="193dp"
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/kalanjali_icon"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-            android:layout_marginLeft="130dp"
-            android:elevation="5dp"
-            android:scaleType="centerCrop"/>
-
-        <TextView
-
-            android:layout_marginTop="110dp"
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="19dp"
-            android:text="@string/about_dev1"
-            android:layout_marginStart="15dp"
-            android:textStyle="bold"
-            android:textColor="#000"/>
-
-        <TextView
-            android:layout_marginTop="150dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:autoLink="phone"
-            android:textSize="17dp"
-            android:text="@string/about_dev2"
-            android:layout_marginStart="15dp"
-            android:textStyle="bold"/>
-        
-        <RelativeLayout
-            android:layout_marginTop="240dp"
-            android:layout_marginLeft="17dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            
-            <ImageView
-                android:id="@+id/img1"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:background="@drawable/ic_call"/>
-
-            <TextView
-                android:layout_toRightOf="@+id/img1"
-                android:layout_marginLeft="15dp"
-                android:layout_width="match_parent"
-                android:autoLink="phone"
-                android:layout_height="wrap_content"
-                android:text="@string/about_dev3"/>
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_marginTop="280dp"
-            android:layout_marginLeft="17dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:paddingBottom="50dp"
+            tools:context="com.zap.Kalanjali.About">
 
             <ImageView
-                android:id="@+id/img2"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
-                android:background="@drawable/ic_email"/>
-
-            <TextView
-                android:layout_toRightOf="@+id/img2"
-                android:layout_marginLeft="15dp"
-                android:autoLink="email"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/about_dev4"/>
+                android:layout_height="195dp"
+                android:background="@drawable/ic_coll" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="193dp"
+                android:elevation="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/kalanjali_icon"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="130dp"
+                    android:elevation="5dp"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="110dp"
+                    android:text="@string/about_dev1"
+                    android:textColor="#000"
+                    android:textSize="19dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="150dp"
+                    android:autoLink="phone"
+                    android:text="@string/about_dev2"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="240dp">
+
+                    <ImageView
+                        android:id="@+id/img1"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/ic_call" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/img1"
+                        android:autoLink="phone"
+                        android:text="@string/about_dev3" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="280dp">
+
+                    <ImageView
+                        android:id="@+id/img2"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/ic_email" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_toRightOf="@+id/img2"
+                        android:autoLink="email"
+                        android:text="@string/about_dev4" />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
         </RelativeLayout>
 
-    </android.support.v7.widget.CardView>
+    </ScrollView>
 
 </RelativeLayout>

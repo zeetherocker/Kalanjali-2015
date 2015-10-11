@@ -71,6 +71,16 @@ public class ContactDetails extends Fragment {
 
         // setting list adapter
         expListView.setAdapter(listAdapter);
+        expListView.expandGroup(0);
+        expListView.setOnGroupExpandListener(new ExpandableListView.OnGroupExpandListener() {
+            @Override
+            public void onGroupExpand(int groupPosition) {
+                for (int i=0; i<listAdapter.getGroupCount();i++){
+                    if(i!= groupPosition)
+                        expListView.collapseGroup(i);
+                }
+            }
+        });
         return myView;
     }
 
