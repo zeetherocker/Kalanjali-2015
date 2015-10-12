@@ -50,6 +50,7 @@ public class MainActivity extends ActionBarActivity {
     private int mActionBarAutoHideMinY = 0;
     private int mActionBarAutoHideSignal = 0;
     private boolean mActionBarShown = true;
+    private String tag;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -147,6 +148,15 @@ public class MainActivity extends ActionBarActivity {
 
     }
 
+    @Override
+    public void onBackPressed() {
+
+        if(tag == "HOME")
+            super.onBackPressed();
+        else
+            openFragment(1);
+    }
+
     public void openFragment (int position) {
 
         Fragment myFragment = null;
@@ -154,15 +164,19 @@ public class MainActivity extends ActionBarActivity {
         switch (position) {
             case 0:
                 myFragment = new About();
+                tag = "ABOUT";
                 break;
             case 1:
                 myFragment = new HomeActivity();
+                tag = "HOME";
                 break;
             case 4:
                 myFragment = new ContactDetails();
+                tag = "CONTACT";
                 break;
             case 5:
                 myFragment = new About();
+                tag = "ABOUT";
                 break;
 
         }
