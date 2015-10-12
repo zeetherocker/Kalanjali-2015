@@ -31,7 +31,7 @@ public class MainActivity extends ActionBarActivity {
     //And we also create a int resource for profile picture in the header view
 
     String NAME = "Kalanjali 2015";
-    String EMAIL = "kalanjali@mvit.com";
+    String EMAIL = "sirmvitkalanjali.in";
     int PROFILE = R.drawable.ic_aka;
     int position = 1;
 
