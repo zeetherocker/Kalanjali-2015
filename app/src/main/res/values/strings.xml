@@ -31,9 +31,9 @@
     <string name="first_home_desc2">VENUE : Old Auditorium \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.300\n2.\tDuration is 12+3 min\n3.\tMaximum of 6 singers are allowed in a group\n4.\tOnly 3 accompanists are allowed\n5.\tTeam has to present 3 songs; One Solo, One Duet and One group song\n6.\tSong should be either in Kannada or Hindi\n7.\tEvaluation is based on singing only not on makeup, costumes or actions of the team\n7.\tKaraoke not allowed</string>
     <string name="first_home_desc3">VENUE : CS Seminar Hall \n\n\nRULES:\n\n1.\tRegistration Fee: Rs.100\n2.Duration is 4+2 min\n3.\tEvaluation is based on Composition, Rhythm, Coordination and General Impression\n4.\tParticipants shall bring their own instruments\n5.\tOnly 2 accompanists are allowed\n6.\tLanguage of the song shall only be English\n7.\tKaraoke not allowed</string>
     <!--Time-->
-    <string name="first_home_time1">Day-1   9.00 AM</string>
-    <string name="first_home_time2">Day-2   10.30 AM</string>
-    <string name="first_home_time3">Day-2   9.30 AM</string>
+    <string name="first_home_time1">Day-1   2.30 PM</string>
+    <string name="first_home_time2">Day-2   11.30 AM</string>
+    <string name="first_home_time3">Day-1   12.00 PM</string>
 
 
     <!-- Second Card in Home Screen -->
@@ -126,12 +126,12 @@
     <string name="day1_time7">12.00 PM - 2.00 PM</string>
     <string name="day1_time8">12.00 PM - 2.00 PM</string>
     <string name="day1_time9">12.00 PM - 2.00 PM</string>
-    <string name="day1_time10">2.00 PM - 4.00 PM</string>
-    <string name="day1_time11">2.00 PM - 4.00 PM</string>
-    <string name="day1_time12">2.00 PM - 4.00 PM</string>
-    <string name="day1_time13">2.00 PM - 4.00 PM</string>
-    <string name="day1_time14">2.00 PM - 4.00 PM</string>
-    <string name="day1_time15">2.00 PM - 4.00 PM</string>
+    <string name="day1_time10">2.30 PM - 4.00 PM</string>
+    <string name="day1_time11">2.30 PM - 4.00 PM</string>
+    <string name="day1_time12">2.30 PM - 4.00 PM</string>
+    <string name="day1_time13">2.30 PM - 4.00 PM</string>
+    <string name="day1_time14">2.30 PM - 4.00 PM</string>
+    <string name="day1_time15">2.30 PM - 4.00 PM</string>
     <string name="day1_time16">12.00 PM - 4.00 PM</string>
     <string name="day1_time17">12.00 PM - 4.00 PM</string>
     <string name="day1_time18">12.00 PM - 4.00 PM</string>
@@ -192,21 +192,21 @@
     <string name="day2_time2">10.30 AM - 11.30 AM</string>
     <string name="day2_time3">9.30 AM - 11.30 AM</string>
     <string name="day2_time4">11.30 AM - 2.00 PM</string>
-    <string name="day2_time5">10.30 AM - 11.30 AM</string>
+    <string name="day2_time5">9.30 AM - 11.30 AM</string>
     <string name="day2_time6">11.30 AM - 2.00 PM</string>
-    <string name="day2_time7">10.30 AM - 11.30 AM</string>
-    <string name="day2_time8">10.30 AM - 11.30 AM</string>
-    <string name="day2_time9">10.30 AM - 11.30 AM</string>
-    <string name="day2_time10">10.30 AM - 11.30 AM</string>
-    <string name="day2_time11">10.30 AM - 11.30 AM</string>
+    <string name="day2_time7">9.30 AM - 11.30 AM</string>
+    <string name="day2_time8">9.30 AM - 11.30 AM</string>
+    <string name="day2_time9">9.30 AM - 11.30 AM</string>
+    <string name="day2_time10">9.30 AM - 11.30 AM</string>
+    <string name="day2_time11">9.30 AM - 11.30 AM</string>
     <string name="day2_time12">11.30 AM - 2.00 PM</string>
     <string name="day2_time13">11.30 AM - 2.00 PM</string>
     <string name="day2_time14">11.30 AM - 2.00 PM</string>
     <string name="day2_time15">11.30 AM - 2.00 PM</string>
     <string name="day2_time16">11.30 AM - 2.00 PM</string>
     <string name="day2_time17">2.00 PM - 3.30 PM</string>
-    <string name="day2_time18">2.00 PM - 3.30 PM</string>
-    <string name="day2_time19">2.00 PM - 3.30 PM</string>
+    <string name="day2_time18">2.00 PM - 4.30 PM</string>
+    <string name="day2_time19">2.00 PM - 4.30 PM</string>
     <string name="day2_time20">3.30 PM - 5.30 PM</string>
 
     <!--Maps-->
