@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.zap.Kalanjali" >
+    package="com.zap.Kalanjali">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -17,10 +17,10 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,7 +29,7 @@
         </activity>
         <activity
             android:name=".SettingsActivity"
-            android:label="@string/title_activity_settings" >
+            android:label="@string/title_activity_settings">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.zap.Kalanjali.MainActivity" />
@@ -40,33 +40,32 @@
             android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="@string/google_maps_key" />
+            android:value="AIzaSyDykD2-SNguViYeTrvuMS18MheDwRSXJSA" />
 
         <activity
             android:name=".Locate_us"
-            android:label="@string/title_activity_locate_us" >
+            android:label="@string/title_activity_locate_us">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.zap.Kalanjali.MainActivity" />
         </activity>
         <activity
             android:name=".EventActivity"
-            android:label="@string/title_activity_event" >
+            android:label="@string/title_activity_event">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.zap.Kalanjali.MainActivity" />
         </activity>
         <activity
             android:name=".Tabs.EventListActivity"
-            android:label="@string/title_activity_event" >
+            android:label="@string/title_activity_event">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.zap.Kalanjali.MainActivity" />
         </activity>
         <activity
             android:name=".GeneralRules"
-            android:label="@string/title_activity_general_rules" >
-        </activity>
+            android:label="@string/title_activity_general_rules"></activity>
     </application>
 
 </manifest>

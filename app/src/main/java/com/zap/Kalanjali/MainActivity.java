@@ -24,8 +24,8 @@ public class MainActivity extends ActionBarActivity {
     //First We Declare Titles And Icons For Our Navigation Drawer List View
     //This Icons And Titles Are holded in an Array as you can see
 
-    String TITLES[] = {"Home","Events","Locate us","Contact","About"};
-    int ICONS[] = {R.drawable.ic_home,R.drawable.ic_events,R.drawable.ic_maps,R.drawable.ic_mail,R.drawable.ic_about};
+    String TITLES[] = {"Home","Events","Schedule","Locate us","Contact","About"};
+    int ICONS[] = {R.drawable.ic_home,R.drawable.ic_events,R.drawable.ic_schedule,R.drawable.ic_maps,R.drawable.ic_mail,R.drawable.ic_about};
 
     //Similarly we Create a String Resource for the name and email in the header view
     //And we also create a int resource for profile picture in the header view
@@ -94,7 +94,7 @@ public class MainActivity extends ActionBarActivity {
                 if (child != null && mGestureDetector.onTouchEvent(motionEvent)) {
                     Drawer.closeDrawers();
                     position = recyclerView.getChildPosition(child);
-                    if(position== 3 || position == 2){
+                    if(position== 4 || position == 2){
                         startActivity(position);
                     } else {
                         openFragment(position);
@@ -170,11 +170,15 @@ public class MainActivity extends ActionBarActivity {
                 myFragment = new HomeActivity();
                 tag = "HOME";
                 break;
-            case 4:
+            case 3:
+                myFragment = new Schedule();
+                tag = "SCHEDULE";
+                break;
+            case 5:
                 myFragment = new ContactDetails();
                 tag = "CONTACT";
                 break;
-            case 5:
+            case 6:
                 myFragment = new About();
                 tag = "ABOUT";
                 break;
